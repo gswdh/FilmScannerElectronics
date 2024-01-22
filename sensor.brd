@@ -332,6 +332,15 @@
 <wire x1="2.25" y1="-1" x2="-2.25" y2="-1" width="0.125" layer="21"/>
 <wire x1="-2.25" y1="-1" x2="-2.25" y2="1" width="0.125" layer="21"/>
 </package>
+<package name="0603">
+<smd name="2" x="0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
+<smd name="1" x="-0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
+<text x="-1.5" y="0.75" size="1.016" layer="25">&gt;NAME</text>
+<wire x1="-1.375" y1="0.625" x2="1.375" y2="0.625" width="0.125" layer="21"/>
+<wire x1="1.375" y1="0.625" x2="1.375" y2="-0.625" width="0.125" layer="21"/>
+<wire x1="1.375" y1="-0.625" x2="-1.375" y2="-0.625" width="0.125" layer="21"/>
+<wire x1="-1.375" y1="-0.625" x2="-1.375" y2="0.625" width="0.125" layer="21"/>
+</package>
 </packages>
 </library>
 <library name="CAPACITORS">
@@ -345,6 +354,13 @@
 <wire x1="1.375" y1="0.625" x2="1.375" y2="-0.625" width="0.125" layer="21"/>
 <wire x1="1.375" y1="-0.625" x2="-1.375" y2="-0.625" width="0.125" layer="21"/>
 <wire x1="-1.375" y1="-0.625" x2="-1.375" y2="0.625" width="0.125" layer="21"/>
+</package>
+<package name="8MM_RADIAL_3.5MM_PITCH">
+<circle x="0" y="0" radius="4" width="0.15" layer="21"/>
+<text x="3" y="3" size="1" layer="25">&gt;NAME</text>
+<pad name="P" x="-1.75" y="0" drill="0.7" shape="square"/>
+<pad name="N" x="1.75" y="0" drill="0.7"/>
+<wire x1="2.75" y1="2.75" x2="2.75" y2="-2.75" width="0.15" layer="21"/>
 </package>
 </packages>
 </library>
@@ -395,6 +411,48 @@
 <wire x1="0.875" y1="-0.375" x2="0.875" y2="0.375" width="0.125" layer="21"/>
 <wire x1="0.875" y1="0.375" x2="-0.875" y2="0.375" width="0.125" layer="21"/>
 <wire x1="-0.875" y1="0.375" x2="-0.875" y2="-0.375" width="0.125" layer="21"/>
+</package>
+</packages>
+</library>
+<library name="TRANSISTORs">
+<packages>
+<package name="TO126V">
+<pad name="2" x="0" y="0" drill="0.8" shape="long" rot="R90"/>
+<pad name="3" x="2.25" y="0" drill="0.8" shape="long" rot="R90"/>
+<pad name="1" x="-2.25" y="0" drill="0.8" shape="long" rot="R90"/>
+<wire x1="-3.25" y1="1.25" x2="3.25" y2="1.25" width="0.127" layer="21"/>
+<wire x1="3.25" y1="1.25" x2="3.25" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="3.25" y1="-1.25" x2="-3.25" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="-3.25" y1="-1.25" x2="-3.25" y2="1.25" width="0.127" layer="21"/>
+<rectangle x1="-3.25" y1="0.75" x2="3.25" y2="1.25" layer="21"/>
+<text x="2.995" y="-1.56" size="1" layer="25" rot="R180">&gt;NAME</text>
+</package>
+</packages>
+</library>
+<library name="r_0603">
+<packages>
+<package name="0603">
+<description>Standard imperial 0603.</description>
+<smd name="2" x="0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
+<smd name="1" x="-0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
+<text x="-1.5" y="0.75" size="1.016" layer="25">&gt;NAME</text>
+<wire x1="-1.375" y1="0.625" x2="1.375" y2="0.625" width="0.125" layer="21"/>
+<wire x1="1.375" y1="0.625" x2="1.375" y2="-0.625" width="0.125" layer="21"/>
+<wire x1="1.375" y1="-0.625" x2="-1.375" y2="-0.625" width="0.125" layer="21"/>
+<wire x1="-1.375" y1="-0.625" x2="-1.375" y2="0.625" width="0.125" layer="21"/>
+</package>
+</packages>
+</library>
+<library name="c_0603">
+<packages>
+<package name="0603">
+<smd name="2" x="0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
+<smd name="1" x="-0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
+<text x="-1.5" y="0.75" size="1.016" layer="25">&gt;NAME</text>
+<wire x1="-1.375" y1="0.625" x2="1.375" y2="0.625" width="0.125" layer="21"/>
+<wire x1="1.375" y1="0.625" x2="1.375" y2="-0.625" width="0.125" layer="21"/>
+<wire x1="1.375" y1="-0.625" x2="-1.375" y2="-0.625" width="0.125" layer="21"/>
+<wire x1="-1.375" y1="-0.625" x2="-1.375" y2="0.625" width="0.125" layer="21"/>
 </package>
 </packages>
 </library>
@@ -1041,6 +1099,76 @@ einem neuen Namen ab.</description>
 <element name="MECH6" library="MISC" package="MOUNTHOLE_6X3" value="6mm x 3mm" x="-22" y="123" smashed="yes" rot="MR0"/>
 <element name="MECH7" library="MISC" package="MOUNTHOLE_6X3" value="6mm x 3mm" x="22" y="54" smashed="yes" rot="R180"/>
 <element name="MECH8" library="MISC" package="MOUNTHOLE_6X3" value="6mm x 3mm" x="-22" y="54" smashed="yes" rot="R180"/>
+<element name="Q2" library="TRANSISTORs" package="TO126V" value="KSC2690A" x="-129.5" y="-111.125" smashed="yes">
+<attribute name="FARNELL" value="2453953" x="-129.5" y="-102.625" size="0.5" layer="27" display="off"/>
+<attribute name="NAME" x="-126.505" y="-112.685" size="1" layer="25" rot="R180"/>
+<attribute name="PRICE_PER" value="0.536" x="-129.5" y="-102.625" size="0.5" layer="27" display="off"/>
+</element>
+<element name="R3" library="r_0603" package="0603" value="10k" x="-130.875" y="-119.625" smashed="yes">
+<attribute name="DIGIKEY" value="541-2980-1-ND" x="-130.875" y="-107.875" size="0.5" layer="27" display="off"/>
+<attribute name="HEIGHT" value="1" x="-130.875" y="-107.875" size="0.5" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Vishay Dale" x="-130.875" y="-107.875" size="0.5" layer="27" display="off"/>
+<attribute name="NAME" x="-132.375" y="-118.875" size="1.016" layer="25"/>
+<attribute name="POWER" value="0.1W, 1/10W" x="-130.875" y="-107.875" size="0.5" layer="27" display="off"/>
+<attribute name="PRICE_PER" value="0.12000" x="-130.875" y="-107.875" size="0.5" layer="27" display="off"/>
+<attribute name="STOCK" value="50797" x="-130.875" y="-107.875" size="0.5" layer="27" display="off"/>
+<attribute name="TOLERANCE" value="±1%" x="-130.875" y="-107.875" size="0.5" layer="27" display="off"/>
+</element>
+<element name="R11" library="r_0603" package="0603" value="20k" x="-127.375" y="-119.625" smashed="yes">
+<attribute name="DIGIKEY" value="541-20.0KHCT-ND" x="-130.875" y="-111.125" size="0.5" layer="27" display="off"/>
+<attribute name="HEIGHT" value="1" x="-130.875" y="-111.125" size="0.5" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Vishay Dale" x="-130.875" y="-111.125" size="0.5" layer="27" display="off"/>
+<attribute name="NAME" x="-128.875" y="-118.875" size="1.016" layer="25"/>
+<attribute name="POWER" value="0.1W, 1/10W" x="-130.875" y="-111.125" size="0.5" layer="27" display="off"/>
+<attribute name="PRICE_PER" value="0.07000" x="-130.875" y="-111.125" size="0.5" layer="27" display="off"/>
+<attribute name="STOCK" value="25018" x="-130.875" y="-111.125" size="0.5" layer="27" display="off"/>
+<attribute name="TOLERANCE" value="±1%" x="-130.875" y="-111.125" size="0.5" layer="27" display="off"/>
+</element>
+<element name="C8" library="CAPACITORS" package="8MM_RADIAL_3.5MM_PITCH" value="100uF 50V" x="-128.75" y="-105.5" smashed="yes">
+<attribute name="DIGIKEY" value="1572-1044-ND" x="-128.75" y="-116.625" size="0.5" layer="27" display="off"/>
+<attribute name="HEIGHT" value="14" x="-128.75" y="-116.625" size="0.5" layer="27" display="off"/>
+<attribute name="NAME" x="-125.75" y="-102.5" size="1" layer="25"/>
+<attribute name="PRICE_PER" value="0.223" x="-128.75" y="-116.625" size="0.5" layer="27" display="off"/>
+</element>
+<element name="C9" library="c_0603" package="0603" value="0.1uF 50V" x="-123.875" y="-111.875" smashed="yes">
+<attribute name="DIGIKEY" value="478-5778-1-ND" x="-130.875" y="-123" size="0.5" layer="27" display="off"/>
+<attribute name="HEIGHT" value="-" x="-130.875" y="-123" size="0.5" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="AVX Corporation" x="-130.875" y="-123" size="0.5" layer="27" display="off"/>
+<attribute name="NAME" x="-125.375" y="-111.125" size="1.016" layer="25"/>
+<attribute name="PRICE_PER" value="0.07000" x="-130.875" y="-123" size="0.5" layer="27" display="off"/>
+<attribute name="STOCK" value="883194" x="-130.875" y="-123" size="0.5" layer="27" display="off"/>
+<attribute name="TEMP_CO" value="X7R" x="-130.875" y="-123" size="0.5" layer="27" display="off"/>
+<attribute name="TOLERANCE" value="±5%" x="-130.875" y="-123" size="0.5" layer="27" display="off"/>
+<attribute name="VOLTAGE" value="50V" x="-130.875" y="-123" size="0.5" layer="27" display="off"/>
+</element>
+<element name="C10" library="c_0603" package="0603" value="0.1uF 50V" x="-130.875" y="-116.375" smashed="yes">
+<attribute name="DIGIKEY" value="478-5778-1-ND" x="-130.875" y="-126.25" size="0.5" layer="27" display="off"/>
+<attribute name="HEIGHT" value="-" x="-130.875" y="-126.25" size="0.5" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="AVX Corporation" x="-130.875" y="-126.25" size="0.5" layer="27" display="off"/>
+<attribute name="NAME" x="-132.375" y="-115.625" size="1.016" layer="25"/>
+<attribute name="PRICE_PER" value="0.07000" x="-130.875" y="-126.25" size="0.5" layer="27" display="off"/>
+<attribute name="STOCK" value="883194" x="-130.875" y="-126.25" size="0.5" layer="27" display="off"/>
+<attribute name="TEMP_CO" value="X7R" x="-130.875" y="-126.25" size="0.5" layer="27" display="off"/>
+<attribute name="TOLERANCE" value="±5%" x="-130.875" y="-126.25" size="0.5" layer="27" display="off"/>
+<attribute name="VOLTAGE" value="50V" x="-130.875" y="-126.25" size="0.5" layer="27" display="off"/>
+</element>
+<element name="C11" library="c_0603" package="0603" value="100pF 50V" x="-127.375" y="-116.375" smashed="yes">
+<attribute name="DIGIKEY" value="478-06035A101J4T4ACT-ND" x="-130.875" y="-129.5" size="0.5" layer="27" display="off"/>
+<attribute name="HEIGHT" value="-" x="-130.875" y="-129.5" size="0.5" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="AVX Corporation" x="-130.875" y="-129.5" size="0.5" layer="27" display="off"/>
+<attribute name="NAME" x="-128.875" y="-115.625" size="1.016" layer="25"/>
+<attribute name="PRICE_PER" value="0.13000" x="-130.875" y="-129.5" size="0.5" layer="27" display="off"/>
+<attribute name="STOCK" value="29039" x="-130.875" y="-129.5" size="0.5" layer="27" display="off"/>
+<attribute name="TEMP_CO" value="C0G, NP0" x="-130.875" y="-129.5" size="0.5" layer="27" display="off"/>
+<attribute name="TOLERANCE" value="±5%" x="-130.875" y="-129.5" size="0.5" layer="27" display="off"/>
+<attribute name="VOLTAGE" value="50V" x="-130.875" y="-129.5" size="0.5" layer="27" display="off"/>
+</element>
+<element name="FB2" library="INDUCTORS" package="0603" value="600R" x="-123.875" y="-116.375" smashed="yes">
+<attribute name="DIGIKEY" value="732-1593-1-ND" x="-130.875" y="-132.75" size="0.5" layer="27" display="off"/>
+<attribute name="HEIGHT" value="1" x="-130.875" y="-132.75" size="0.5" layer="27" display="off"/>
+<attribute name="NAME" x="-125.375" y="-115.625" size="1.016" layer="25"/>
+<attribute name="PRICE_PER" value="0.13" x="-130.875" y="-132.75" size="0.5" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -1153,6 +1281,16 @@ einem neuen Namen ab.</description>
 <contactref element="C61" pad="1"/>
 <contactref element="C62" pad="1"/>
 <contactref element="C63" pad="1"/>
+<contactref element="R11" pad="1"/>
+<contactref element="C8" pad="N"/>
+<contactref element="C9" pad="1"/>
+<contactref element="C11" pad="1"/>
+<contactref element="C10" pad="1"/>
+<wire x1="-128.125" y1="-116.375" x2="-128.125" y2="-119.625" width="0" layer="19" extent="1-1"/>
+<wire x1="-131.625" y1="-116.375" x2="-128.125" y2="-116.375" width="0" layer="19" extent="1-1"/>
+<wire x1="-124.625" y1="-111.875" x2="-128.125" y2="-116.375" width="0" layer="19" extent="1-1"/>
+<wire x1="-127" y1="-105.5" x2="-124.625" y2="-111.875" width="0" layer="19" extent="1-1"/>
+<wire x1="-77.5" y1="-100" x2="-124.625" y2="-111.875" width="0" layer="19" extent="1-1"/>
 <wire x1="-77.5" y1="-96.75" x2="-77.5" y2="-100" width="0" layer="19" extent="1-1"/>
 <wire x1="-77.5" y1="-93.5" x2="-77.5" y2="-96.75" width="0" layer="19" extent="1-1"/>
 <wire x1="-77.5" y1="-90.25" x2="-77.5" y2="-93.5" width="0" layer="19" extent="1-1"/>
@@ -1601,6 +1739,31 @@ einem neuen Namen ab.</description>
 </signal>
 <signal name="N$42">
 <contactref element="U20" pad="3"/>
+</signal>
+<signal name="N$3">
+<contactref element="Q2" pad="2"/>
+<contactref element="R3" pad="2"/>
+<contactref element="C9" pad="2"/>
+<contactref element="C11" pad="2"/>
+<contactref element="FB2" pad="2"/>
+<wire x1="-126.625" y1="-116.375" x2="-130.125" y2="-119.625" width="0" layer="19" extent="1-1"/>
+<wire x1="-123.125" y1="-116.375" x2="-126.625" y2="-116.375" width="0" layer="19" extent="1-1"/>
+<wire x1="-123.125" y1="-111.875" x2="-123.125" y2="-116.375" width="0" layer="19" extent="1-1"/>
+<wire x1="-129.5" y1="-111.125" x2="-126.625" y2="-116.375" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$4">
+<contactref element="R3" pad="1"/>
+<contactref element="R11" pad="2"/>
+<contactref element="Q2" pad="3"/>
+<contactref element="C8" pad="P"/>
+<wire x1="-126.625" y1="-119.625" x2="-131.625" y2="-119.625" width="0" layer="19" extent="1-1"/>
+<wire x1="-127.25" y1="-111.125" x2="-126.625" y2="-119.625" width="0" layer="19" extent="1-1"/>
+<wire x1="-130.5" y1="-105.5" x2="-127.25" y2="-111.125" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="PWR_SENS_UNREG">
+<contactref element="Q2" pad="1"/>
+<contactref element="C10" pad="2"/>
+<wire x1="-131.75" y1="-111.125" x2="-130.125" y2="-116.375" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
