@@ -2192,11 +2192,11 @@ Synchronous Step-Down Converter</description>
 <package name="SRP1035A">
 <smd name="1" x="-4.75" y="0" dx="3.5" dy="4.1" layer="1"/>
 <smd name="2" x="4.75" y="0" dx="3.5" dy="4.1" layer="1"/>
-<wire x1="-6.75" y1="-5" x2="6.75" y2="-5" width="0.25" layer="21"/>
-<wire x1="6.75" y1="-5" x2="6.75" y2="5" width="0.25" layer="21"/>
-<wire x1="6.75" y1="5" x2="-6.75" y2="5" width="0.25" layer="21"/>
-<wire x1="-6.75" y1="5" x2="-6.75" y2="-5" width="0.25" layer="21"/>
-<text x="-6.75" y="5.25" size="1" layer="25">&gt;NAME</text>
+<wire x1="-6.75" y1="-5" x2="6.75" y2="-5" width="0.125" layer="21"/>
+<wire x1="6.75" y1="-5" x2="6.75" y2="5" width="0.125" layer="21"/>
+<wire x1="6.75" y1="5" x2="-6.75" y2="5" width="0.125" layer="21"/>
+<wire x1="-6.75" y1="5" x2="-6.75" y2="-5" width="0.125" layer="21"/>
+<text x="-6.75" y="5.125" size="0.5" layer="25">&gt;NAME</text>
 </package>
 <package name="SRN5040">
 <wire x1="-2.5" y1="-2.75" x2="2.5" y2="-2.75" width="0.15" layer="21"/>
@@ -3306,6 +3306,10 @@ Synchronous Step-Down Converter</description>
 <part name="C47" library="c_0603" deviceset="06035C104JAT2A" device="" value="0.1uF 50V"/>
 <part name="GND55" library="NETS" deviceset="GND" device=""/>
 <part name="C48" library="c_0603" deviceset="06035A101J4T4A" device="" value="NO FIT"/>
+<part name="R20" library="r_0603" deviceset="ERJ3EKF1002V" device="" value="10k"/>
+<part name="R21" library="r_0603" deviceset="ERJ3EKF1002V" device="" value="10k"/>
+<part name="CN7" library="CONNECTORs" deviceset="SFV8R-1STBE1HLF" device="" value="8 PIN FFC"/>
+<part name="GND56" library="NETS" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3835,6 +3839,21 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <attribute name="NAME" x="7.62" y="-144.78" size="1.778" layer="95"/>
 <attribute name="VALUE" x="7.62" y="-147.32" size="1.778" layer="96"/>
 </instance>
+<instance part="R20" gate="G$1" x="-157.48" y="48.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="-160.02" y="48.26" size="1.27" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="-154.94" y="48.26" size="1.27" layer="96" rot="R90" align="center"/>
+</instance>
+<instance part="R21" gate="G$1" x="-149.86" y="48.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="-152.4" y="48.26" size="1.27" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="-147.32" y="48.26" size="1.27" layer="96" rot="R90" align="center"/>
+</instance>
+<instance part="CN7" gate="G$1" x="-165.1" y="27.94" smashed="yes">
+<attribute name="NAME" x="-167.64" y="43.18" size="1.27" layer="95"/>
+<attribute name="VALUE" x="-167.64" y="40.64" size="1.27" layer="96"/>
+</instance>
+<instance part="GND56" gate="G$1" x="-157.48" y="12.7" smashed="yes">
+<attribute name="VALUE" x="-157.48" y="10.16" size="1.778" layer="96" align="center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4096,6 +4115,12 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <wire x1="22.86" y1="-162.56" x2="25.4" y2="-162.56" width="0.1524" layer="91"/>
 <pinref part="GND44" gate="G$1" pin="GND"/>
 <wire x1="25.4" y1="-162.56" x2="25.4" y2="-165.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="CN7" gate="G$1" pin="8"/>
+<pinref part="GND56" gate="G$1" pin="GND"/>
+<wire x1="-160.02" y1="17.78" x2="-157.48" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-157.48" y1="17.78" x2="-157.48" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWR_FPGA_1V2" class="0">
@@ -4549,6 +4574,21 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <wire x1="-124.46" y1="-149.86" x2="-124.46" y2="-147.32" width="0.1524" layer="91"/>
 <junction x="-124.46" y="-147.32"/>
 </segment>
+<segment>
+<pinref part="R21" gate="G$1" pin="2"/>
+<wire x1="-149.86" y1="53.34" x2="-149.86" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="R20" gate="G$1" pin="2"/>
+<wire x1="-157.48" y1="55.88" x2="-149.86" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-149.86" y1="55.88" x2="-127" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-157.48" y1="53.34" x2="-157.48" y2="55.88" width="0.1524" layer="91"/>
+<label x="-147.32" y="55.88" size="1.778" layer="95"/>
+<junction x="-149.86" y="55.88"/>
+</segment>
+<segment>
+<pinref part="CN7" gate="G$1" pin="1"/>
+<wire x1="-127" y1="35.56" x2="-160.02" y2="35.56" width="0.1524" layer="91"/>
+<label x="-147.32" y="35.56" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="FPGA_JTAG_TCK" class="0">
 <segment>
@@ -4781,174 +4821,6 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <label x="-63.5" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GPIOL_68" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOL_68"/>
-<wire x1="-33.02" y1="25.4" x2="-66.04" y2="25.4" width="0.1524" layer="91"/>
-<label x="-63.5" y="25.4" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOL_69" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOL_69_CBSEL1"/>
-<wire x1="-33.02" y1="22.86" x2="-66.04" y2="22.86" width="0.1524" layer="91"/>
-<label x="-63.5" y="22.86" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOL_70" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOL_70_CBSEL0"/>
-<wire x1="-33.02" y1="20.32" x2="-66.04" y2="20.32" width="0.1524" layer="91"/>
-<label x="-63.5" y="20.32" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOL_71" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOL_71_NSTATUS"/>
-<wire x1="-33.02" y1="17.78" x2="-66.04" y2="17.78" width="0.1524" layer="91"/>
-<label x="-63.5" y="17.78" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOL_72" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOL_72_EXTFB0_CDI14"/>
-<wire x1="-33.02" y1="15.24" x2="-66.04" y2="15.24" width="0.1524" layer="91"/>
-<label x="-63.5" y="15.24" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOL_73" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOL_73_EXTFB1_CDI15"/>
-<wire x1="-33.02" y1="12.7" x2="-66.04" y2="12.7" width="0.1524" layer="91"/>
-<label x="-63.5" y="12.7" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOR_78" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOR_78_EXTFB0_CDI31"/>
-<wire x1="-33.02" y1="-12.7" x2="-66.04" y2="-12.7" width="0.1524" layer="91"/>
-<label x="-63.5" y="-12.7" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOR_79" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOR_79_EXTFB1_CDI30"/>
-<wire x1="-33.02" y1="-15.24" x2="-66.04" y2="-15.24" width="0.1524" layer="91"/>
-<label x="-63.5" y="-15.24" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOR_80" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOR_80"/>
-<wire x1="-33.02" y1="-17.78" x2="-66.04" y2="-17.78" width="0.1524" layer="91"/>
-<label x="-63.5" y="-17.78" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOR_81" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOR_81_MREFCLK"/>
-<wire x1="-33.02" y1="-20.32" x2="-66.04" y2="-20.32" width="0.1524" layer="91"/>
-<label x="-63.5" y="-20.32" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOR_82" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOR_82"/>
-<wire x1="-33.02" y1="-22.86" x2="-66.04" y2="-22.86" width="0.1524" layer="91"/>
-<label x="-63.5" y="-22.86" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOR_83" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOR_83"/>
-<wire x1="-33.02" y1="-25.4" x2="-66.04" y2="-25.4" width="0.1524" layer="91"/>
-<label x="-63.5" y="-25.4" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOR_84" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOR_84"/>
-<wire x1="-33.02" y1="-27.94" x2="-66.04" y2="-27.94" width="0.1524" layer="91"/>
-<label x="-63.5" y="-27.94" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOR_88" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOR_88_CDI28"/>
-<wire x1="-33.02" y1="-38.1" x2="-66.04" y2="-38.1" width="0.1524" layer="91"/>
-<label x="-63.5" y="-38.1" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOR_94" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOR_94_CDI27"/>
-<wire x1="33.02" y1="139.7" x2="66.04" y2="139.7" width="0.1524" layer="91"/>
-<label x="35.56" y="139.7" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOR_95" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOR_95_CDI26"/>
-<wire x1="33.02" y1="137.16" x2="66.04" y2="137.16" width="0.1524" layer="91"/>
-<label x="35.56" y="137.16" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOR_104" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOR_104_CDI25"/>
-<wire x1="33.02" y1="134.62" x2="66.04" y2="134.62" width="0.1524" layer="91"/>
-<label x="35.56" y="134.62" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOR_105" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOR_105_CDI24"/>
-<wire x1="33.02" y1="132.08" x2="66.04" y2="132.08" width="0.1524" layer="91"/>
-<label x="35.56" y="132.08" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOR_112" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOR_112_CDI23"/>
-<wire x1="33.02" y1="129.54" x2="66.04" y2="129.54" width="0.1524" layer="91"/>
-<label x="35.56" y="129.54" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOR_116" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOR_116_CTRL15"/>
-<wire x1="33.02" y1="124.46" x2="66.04" y2="124.46" width="0.1524" layer="91"/>
-<label x="35.56" y="124.46" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOR_117" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOR_117_CTRL14"/>
-<wire x1="33.02" y1="121.92" x2="66.04" y2="121.92" width="0.1524" layer="91"/>
-<label x="35.56" y="121.92" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOR_122" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOR_122_CLK13_CDI21"/>
-<wire x1="33.02" y1="119.38" x2="66.04" y2="119.38" width="0.1524" layer="91"/>
-<label x="35.56" y="119.38" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOR_123" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOR_123_CLK12_CDI20"/>
-<wire x1="33.02" y1="116.84" x2="66.04" y2="116.84" width="0.1524" layer="91"/>
-<label x="35.56" y="116.84" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOR_125" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOR_125_CLK10"/>
-<wire x1="33.02" y1="101.6" x2="66.04" y2="101.6" width="0.1524" layer="91"/>
-<label x="35.56" y="101.6" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="GPIOR_128" class="0">
 <segment>
 <pinref part="U18" gate="G$1" pin="GPIOR_128_CTRL11"/>
@@ -4977,27 +4849,6 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <label x="35.56" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GPIOR_136" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOR_136_CDI16"/>
-<wire x1="33.02" y1="86.36" x2="66.04" y2="86.36" width="0.1524" layer="91"/>
-<label x="35.56" y="86.36" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOR_138" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOR_138"/>
-<wire x1="33.02" y1="83.82" x2="66.04" y2="83.82" width="0.1524" layer="91"/>
-<label x="35.56" y="83.82" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOR_139" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOR_139"/>
-<wire x1="33.02" y1="81.28" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
-<label x="35.56" y="81.28" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="FPGA_CLK_33M" class="0">
 <segment>
 <pinref part="U18" gate="G$1" pin="GPIOR_157_PLLIN"/>
@@ -5010,14 +4861,14 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <label x="144.78" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GPIOR_155" class="0">
+<net name="STP_MS1" class="0">
 <segment>
 <pinref part="U18" gate="G$1" pin="GPIOR_155"/>
 <wire x1="33.02" y1="55.88" x2="66.04" y2="55.88" width="0.1524" layer="91"/>
 <label x="35.56" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GPIOR_154" class="0">
+<net name="STP_MS2" class="0">
 <segment>
 <pinref part="U18" gate="G$1" pin="GPIOR_154"/>
 <wire x1="33.02" y1="58.42" x2="66.04" y2="58.42" width="0.1524" layer="91"/>
@@ -5031,7 +4882,7 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <label x="35.56" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GPIOB_CN0" class="0">
+<net name="STP_IDX" class="0">
 <segment>
 <pinref part="U18" gate="G$1" pin="GPIOB_CLKN0"/>
 <wire x1="33.02" y1="33.02" x2="66.04" y2="33.02" width="0.1524" layer="91"/>
@@ -5080,21 +4931,21 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <label x="35.56" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GPIOB_P10" class="0">
+<net name="STP_NEN" class="0">
 <segment>
 <pinref part="U18" gate="G$1" pin="GPIOB_RXP10"/>
 <wire x1="33.02" y1="10.16" x2="66.04" y2="10.16" width="0.1524" layer="91"/>
 <label x="35.56" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GPIOB_N10" class="0">
+<net name="STP_DIR" class="0">
 <segment>
 <pinref part="U18" gate="G$1" pin="GPIOB_RXN10"/>
 <wire x1="33.02" y1="7.62" x2="66.04" y2="7.62" width="0.1524" layer="91"/>
 <label x="35.56" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GPIOB_P12" class="0">
+<net name="STP_UART_IO" class="0">
 <segment>
 <pinref part="U18" gate="G$1" pin="GPIOB_RXP12_EXTFB0"/>
 <wire x1="33.02" y1="5.08" x2="66.04" y2="5.08" width="0.1524" layer="91"/>
@@ -5193,20 +5044,6 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <pinref part="R126" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="FPGA_SPI_CLK" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOR_86"/>
-<wire x1="-33.02" y1="-33.02" x2="-66.04" y2="-33.02" width="0.1524" layer="91"/>
-<label x="-63.5" y="-33.02" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOL_74" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOL_74_PLLIN0"/>
-<wire x1="-33.02" y1="10.16" x2="-66.04" y2="10.16" width="0.1524" layer="91"/>
-<label x="-63.5" y="10.16" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="GPIOL_66" class="0">
 <segment>
 <pinref part="U18" gate="G$1" pin="GPIOL_66_CDI12"/>
@@ -5228,7 +5065,7 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <label x="35.56" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GPIOB_N12" class="0">
+<net name="STP_STP" class="0">
 <segment>
 <pinref part="U18" gate="G$1" pin="GPIOB_RXN12_EXTFB0"/>
 <wire x1="33.02" y1="2.54" x2="66.04" y2="2.54" width="0.1524" layer="91"/>
@@ -5256,34 +5093,6 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <wire x1="-40.64" y1="236.22" x2="-48.26" y2="236.22" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GPIOL_75" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOL_75_PLLIN1"/>
-<wire x1="-33.02" y1="7.62" x2="-66.04" y2="7.62" width="0.1524" layer="91"/>
-<label x="-63.5" y="7.62" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOR_76" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOR_76_PLLIN0"/>
-<wire x1="-33.02" y1="-7.62" x2="-66.04" y2="-7.62" width="0.1524" layer="91"/>
-<label x="-63.5" y="-7.62" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOR_77" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOR_77_PLLIN1"/>
-<wire x1="-33.02" y1="-10.16" x2="-66.04" y2="-10.16" width="0.1524" layer="91"/>
-<label x="-63.5" y="-10.16" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="FPGA_SPI_NCS" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOR_87_CDI29"/>
-<wire x1="-33.02" y1="-35.56" x2="-66.04" y2="-35.56" width="0.1524" layer="91"/>
-<label x="-63.5" y="-35.56" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="GPIOL_31" class="0">
 <segment>
 <pinref part="U18" gate="G$1" pin="GPIOL_31_CLK7_CDI6"/>
@@ -5291,28 +5100,14 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <label x="-63.5" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="FPGA_SPI_DATA" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOR_85"/>
-<wire x1="-33.02" y1="-30.48" x2="-66.04" y2="-30.48" width="0.1524" layer="91"/>
-<label x="-63.5" y="-30.48" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOR_113" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOR_113_CDI22"/>
-<wire x1="33.02" y1="127" x2="66.04" y2="127" width="0.1524" layer="91"/>
-<label x="35.56" y="127" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIOR_135" class="0">
+<net name="STP_DIA" class="0">
 <segment>
 <pinref part="U18" gate="G$1" pin="GPIOR_135_CDI17"/>
 <wire x1="33.02" y1="88.9" x2="66.04" y2="88.9" width="0.1524" layer="91"/>
 <label x="35.56" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GPIOB_CP0" class="0">
+<net name="STP_CLK" class="0">
 <segment>
 <pinref part="U18" gate="G$1" pin="GPIOB_CLKP0"/>
 <wire x1="33.02" y1="35.56" x2="66.04" y2="35.56" width="0.1524" layer="91"/>
@@ -5449,12 +5244,22 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <label x="152.4" y="-111.76" size="1.778" layer="95"/>
 <pinref part="U6" gate="G$1" pin="!RESET"/>
 </segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOR_76_PLLIN0"/>
+<wire x1="-33.02" y1="-7.62" x2="-66.04" y2="-7.62" width="0.1524" layer="91"/>
+<label x="-63.5" y="-7.62" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="FT_D0" class="0">
 <segment>
 <wire x1="180.34" y1="-116.84" x2="149.86" y2="-116.84" width="0.1524" layer="91"/>
 <label x="152.4" y="-116.84" size="1.778" layer="95"/>
 <pinref part="U6" gate="G$1" pin="ADBUS0"/>
+</segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOL_68"/>
+<wire x1="-33.02" y1="25.4" x2="-66.04" y2="25.4" width="0.1524" layer="91"/>
+<label x="-63.5" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FT_D1" class="0">
@@ -5463,12 +5268,22 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <label x="152.4" y="-119.38" size="1.778" layer="95"/>
 <pinref part="U6" gate="G$1" pin="ADBUS1"/>
 </segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOL_69_CBSEL1"/>
+<wire x1="-33.02" y1="22.86" x2="-66.04" y2="22.86" width="0.1524" layer="91"/>
+<label x="-63.5" y="22.86" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="FT_D2" class="0">
 <segment>
 <wire x1="180.34" y1="-121.92" x2="149.86" y2="-121.92" width="0.1524" layer="91"/>
 <label x="152.4" y="-121.92" size="1.778" layer="95"/>
 <pinref part="U6" gate="G$1" pin="ADBUS2"/>
+</segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOL_70_CBSEL0"/>
+<wire x1="-33.02" y1="20.32" x2="-66.04" y2="20.32" width="0.1524" layer="91"/>
+<label x="-63.5" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FT_D3" class="0">
@@ -5477,12 +5292,22 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <label x="152.4" y="-124.46" size="1.778" layer="95"/>
 <pinref part="U6" gate="G$1" pin="ADBUS3"/>
 </segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOL_71_NSTATUS"/>
+<wire x1="-33.02" y1="17.78" x2="-66.04" y2="17.78" width="0.1524" layer="91"/>
+<label x="-63.5" y="17.78" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="FT_D4" class="0">
 <segment>
 <wire x1="180.34" y1="-127" x2="149.86" y2="-127" width="0.1524" layer="91"/>
 <label x="152.4" y="-127" size="1.778" layer="95"/>
 <pinref part="U6" gate="G$1" pin="ADBUS4"/>
+</segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOL_72_EXTFB0_CDI14"/>
+<wire x1="-33.02" y1="15.24" x2="-66.04" y2="15.24" width="0.1524" layer="91"/>
+<label x="-63.5" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FT_D5" class="0">
@@ -5491,12 +5316,22 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <label x="152.4" y="-129.54" size="1.778" layer="95"/>
 <pinref part="U6" gate="G$1" pin="ADBUS5"/>
 </segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOL_73_EXTFB1_CDI15"/>
+<wire x1="-33.02" y1="12.7" x2="-66.04" y2="12.7" width="0.1524" layer="91"/>
+<label x="-63.5" y="12.7" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="FT_D6" class="0">
 <segment>
 <wire x1="180.34" y1="-132.08" x2="149.86" y2="-132.08" width="0.1524" layer="91"/>
 <label x="152.4" y="-132.08" size="1.778" layer="95"/>
 <pinref part="U6" gate="G$1" pin="ADBUS6"/>
+</segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOL_74_PLLIN0"/>
+<wire x1="-33.02" y1="10.16" x2="-66.04" y2="10.16" width="0.1524" layer="91"/>
+<label x="-63.5" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FT_D7" class="0">
@@ -5505,12 +5340,22 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <label x="152.4" y="-134.62" size="1.778" layer="95"/>
 <pinref part="U6" gate="G$1" pin="ADBUS7"/>
 </segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOL_75_PLLIN1"/>
+<wire x1="-33.02" y1="7.62" x2="-66.04" y2="7.62" width="0.1524" layer="91"/>
+<label x="-63.5" y="7.62" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="FT_NRXF" class="0">
 <segment>
 <wire x1="180.34" y1="-139.7" x2="149.86" y2="-139.7" width="0.1524" layer="91"/>
 <label x="152.4" y="-139.7" size="1.778" layer="95"/>
 <pinref part="U6" gate="G$1" pin="ACBUS0"/>
+</segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOR_80"/>
+<wire x1="-33.02" y1="-17.78" x2="-66.04" y2="-17.78" width="0.1524" layer="91"/>
+<label x="-63.5" y="-17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FT_NTXE" class="0">
@@ -5519,12 +5364,22 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <label x="152.4" y="-142.24" size="1.778" layer="95"/>
 <pinref part="U6" gate="G$1" pin="ACBUS1"/>
 </segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOR_81_MREFCLK"/>
+<wire x1="-33.02" y1="-20.32" x2="-66.04" y2="-20.32" width="0.1524" layer="91"/>
+<label x="-63.5" y="-20.32" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="FT_NRD" class="0">
 <segment>
 <wire x1="180.34" y1="-144.78" x2="149.86" y2="-144.78" width="0.1524" layer="91"/>
 <label x="152.4" y="-144.78" size="1.778" layer="95"/>
 <pinref part="U6" gate="G$1" pin="ACBUS2"/>
+</segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOR_78_EXTFB0_CDI31"/>
+<wire x1="-33.02" y1="-12.7" x2="-66.04" y2="-12.7" width="0.1524" layer="91"/>
+<label x="-63.5" y="-12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FT_NWR" class="0">
@@ -5533,12 +5388,22 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <label x="152.4" y="-147.32" size="1.778" layer="95"/>
 <pinref part="U6" gate="G$1" pin="ACBUS3"/>
 </segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOR_79_EXTFB1_CDI30"/>
+<wire x1="-33.02" y1="-15.24" x2="-66.04" y2="-15.24" width="0.1524" layer="91"/>
+<label x="-63.5" y="-15.24" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="FT_NSIWU" class="0">
 <segment>
 <wire x1="180.34" y1="-149.86" x2="149.86" y2="-149.86" width="0.1524" layer="91"/>
 <label x="152.4" y="-149.86" size="1.778" layer="95"/>
 <pinref part="U6" gate="G$1" pin="ACBUS4"/>
+</segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOR_83"/>
+<wire x1="-33.02" y1="-25.4" x2="-66.04" y2="-25.4" width="0.1524" layer="91"/>
+<label x="-63.5" y="-25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FT_CLKOUT" class="0">
@@ -5547,12 +5412,22 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <label x="152.4" y="-152.4" size="1.778" layer="95"/>
 <pinref part="U6" gate="G$1" pin="ACBUS5"/>
 </segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOR_77_PLLIN1"/>
+<wire x1="-33.02" y1="-10.16" x2="-66.04" y2="-10.16" width="0.1524" layer="91"/>
+<label x="-63.5" y="-10.16" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="FT_NOE" class="0">
 <segment>
 <wire x1="180.34" y1="-154.94" x2="149.86" y2="-154.94" width="0.1524" layer="91"/>
 <label x="152.4" y="-154.94" size="1.778" layer="95"/>
 <pinref part="U6" gate="G$1" pin="ACBUS6"/>
+</segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOR_82"/>
+<wire x1="-33.02" y1="-22.86" x2="-66.04" y2="-22.86" width="0.1524" layer="91"/>
+<label x="-63.5" y="-22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$51" class="0">
@@ -5586,12 +5461,22 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <wire x1="180.34" y1="-162.56" x2="149.86" y2="-162.56" width="0.1524" layer="91"/>
 <label x="152.4" y="-162.56" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOR_86"/>
+<wire x1="-33.02" y1="-33.02" x2="-66.04" y2="-33.02" width="0.1524" layer="91"/>
+<label x="-63.5" y="-33.02" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="FT_CONT_RX" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="BDBUS1"/>
 <wire x1="180.34" y1="-165.1" x2="149.86" y2="-165.1" width="0.1524" layer="91"/>
 <label x="152.4" y="-165.1" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOR_85"/>
+<wire x1="-33.02" y1="-30.48" x2="-66.04" y2="-30.48" width="0.1524" layer="91"/>
+<label x="-63.5" y="-30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FT_CONT_NRTS" class="0">
@@ -5600,12 +5485,22 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <wire x1="180.34" y1="-167.64" x2="149.86" y2="-167.64" width="0.1524" layer="91"/>
 <label x="152.4" y="-167.64" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOR_87_CDI29"/>
+<wire x1="-33.02" y1="-35.56" x2="-66.04" y2="-35.56" width="0.1524" layer="91"/>
+<label x="-63.5" y="-35.56" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="FT_CONT_NCTS" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="BDBUS3"/>
 <wire x1="180.34" y1="-170.18" x2="149.86" y2="-170.18" width="0.1524" layer="91"/>
 <label x="152.4" y="-170.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOR_88_CDI28"/>
+<wire x1="-33.02" y1="-38.1" x2="-66.04" y2="-38.1" width="0.1524" layer="91"/>
+<label x="-63.5" y="-38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FT_CONT_NDTR" class="0">
@@ -5614,12 +5509,22 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <wire x1="180.34" y1="-172.72" x2="149.86" y2="-172.72" width="0.1524" layer="91"/>
 <label x="152.4" y="-172.72" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOR_94_CDI27"/>
+<wire x1="33.02" y1="139.7" x2="66.04" y2="139.7" width="0.1524" layer="91"/>
+<label x="35.56" y="139.7" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="FT_CONT_NDSR" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="BDBUS5"/>
 <wire x1="180.34" y1="-175.26" x2="149.86" y2="-175.26" width="0.1524" layer="91"/>
 <label x="152.4" y="-175.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOR_95_CDI26"/>
+<wire x1="33.02" y1="137.16" x2="66.04" y2="137.16" width="0.1524" layer="91"/>
+<label x="35.56" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FT_CONT_NDCD" class="0">
@@ -5628,6 +5533,11 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <wire x1="180.34" y1="-177.8" x2="149.86" y2="-177.8" width="0.1524" layer="91"/>
 <label x="152.4" y="-177.8" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOR_104_CDI25"/>
+<wire x1="33.02" y1="134.62" x2="66.04" y2="134.62" width="0.1524" layer="91"/>
+<label x="35.56" y="134.62" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="FT_CONT_NRI" class="0">
 <segment>
@@ -5635,12 +5545,22 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <wire x1="180.34" y1="-180.34" x2="149.86" y2="-180.34" width="0.1524" layer="91"/>
 <label x="152.4" y="-180.34" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOR_105_CDI24"/>
+<wire x1="33.02" y1="132.08" x2="66.04" y2="132.08" width="0.1524" layer="91"/>
+<label x="35.56" y="132.08" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="FT_CONT_TXDEN" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="BCBUS0"/>
 <wire x1="180.34" y1="-185.42" x2="149.86" y2="-185.42" width="0.1524" layer="91"/>
 <label x="152.4" y="-185.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOR_112_CDI23"/>
+<wire x1="33.02" y1="129.54" x2="66.04" y2="129.54" width="0.1524" layer="91"/>
+<label x="35.56" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FT_CONT_NRXLED" class="0">
@@ -5675,6 +5595,11 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <wire x1="180.34" y1="-203.2" x2="149.86" y2="-203.2" width="0.1524" layer="91"/>
 <label x="152.4" y="-203.2" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOR_116_CTRL15"/>
+<wire x1="33.02" y1="124.46" x2="66.04" y2="124.46" width="0.1524" layer="91"/>
+<label x="35.56" y="124.46" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="FT_NPWREN" class="0">
 <segment>
@@ -5682,12 +5607,22 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <wire x1="180.34" y1="-208.28" x2="149.86" y2="-208.28" width="0.1524" layer="91"/>
 <label x="152.4" y="-208.28" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOR_113_CDI22"/>
+<wire x1="33.02" y1="127" x2="66.04" y2="127" width="0.1524" layer="91"/>
+<label x="35.56" y="127" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="FT_NSUSPEND" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="!SUSPEND"/>
 <wire x1="180.34" y1="-210.82" x2="149.86" y2="-210.82" width="0.1524" layer="91"/>
 <label x="152.4" y="-210.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOR_84"/>
+<wire x1="-33.02" y1="-27.94" x2="-66.04" y2="-27.94" width="0.1524" layer="91"/>
+<label x="-63.5" y="-27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -5743,25 +5678,99 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <wire x1="-124.46" y1="-160.02" x2="-124.46" y2="-162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$21" class="0">
+<net name="FPGA_STATUS" class="0">
 <segment>
 <pinref part="D6" gate="G$1" pin="K"/>
 <wire x1="-144.78" y1="-172.72" x2="-144.78" y2="-180.34" width="0.1524" layer="91"/>
 <wire x1="-144.78" y1="-180.34" x2="-88.9" y2="-180.34" width="0.1524" layer="91"/>
+<label x="-114.3" y="-180.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOR_136_CDI16"/>
+<wire x1="33.02" y1="86.36" x2="66.04" y2="86.36" width="0.1524" layer="91"/>
+<label x="35.56" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$22" class="0">
+<net name="PROC_STATUS" class="0">
 <segment>
 <pinref part="D5" gate="G$1" pin="K"/>
 <wire x1="-154.94" y1="-172.72" x2="-154.94" y2="-182.88" width="0.1524" layer="91"/>
 <wire x1="-154.94" y1="-182.88" x2="-88.9" y2="-182.88" width="0.1524" layer="91"/>
+<label x="-114.3" y="-182.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOR_138"/>
+<wire x1="33.02" y1="83.82" x2="66.04" y2="83.82" width="0.1524" layer="91"/>
+<label x="35.56" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$23" class="0">
+<net name="PROC_SCANNING" class="0">
 <segment>
 <pinref part="D10" gate="G$1" pin="K"/>
 <wire x1="-165.1" y1="-172.72" x2="-165.1" y2="-185.42" width="0.1524" layer="91"/>
 <wire x1="-165.1" y1="-185.42" x2="-88.9" y2="-185.42" width="0.1524" layer="91"/>
+<label x="-114.3" y="-185.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOR_139"/>
+<wire x1="33.02" y1="81.28" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
+<label x="35.56" y="81.28" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PROC_JTAG_TDI" class="0">
+<segment>
+<pinref part="CN7" gate="G$1" pin="2"/>
+<wire x1="-127" y1="33.02" x2="-160.02" y2="33.02" width="0.1524" layer="91"/>
+<label x="-147.32" y="33.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOR_117_CTRL14"/>
+<wire x1="33.02" y1="121.92" x2="66.04" y2="121.92" width="0.1524" layer="91"/>
+<label x="35.56" y="121.92" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PROC_JTAG_TCK" class="0">
+<segment>
+<pinref part="CN7" gate="G$1" pin="3"/>
+<wire x1="-127" y1="30.48" x2="-157.48" y2="30.48" width="0.1524" layer="91"/>
+<label x="-147.32" y="30.48" size="1.778" layer="95"/>
+<pinref part="R20" gate="G$1" pin="1"/>
+<wire x1="-157.48" y1="30.48" x2="-160.02" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-157.48" y1="43.18" x2="-157.48" y2="30.48" width="0.1524" layer="91"/>
+<junction x="-157.48" y="30.48"/>
+</segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOR_122_CLK13_CDI21"/>
+<wire x1="33.02" y1="119.38" x2="66.04" y2="119.38" width="0.1524" layer="91"/>
+<label x="35.56" y="119.38" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PROC_JTAG_TMS" class="0">
+<segment>
+<pinref part="CN7" gate="G$1" pin="4"/>
+<wire x1="-127" y1="27.94" x2="-160.02" y2="27.94" width="0.1524" layer="91"/>
+<label x="-147.32" y="27.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOR_123_CLK12_CDI20"/>
+<wire x1="33.02" y1="116.84" x2="66.04" y2="116.84" width="0.1524" layer="91"/>
+<label x="35.56" y="116.84" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PROC_JTAG_TDO" class="0">
+<segment>
+<pinref part="CN7" gate="G$1" pin="5"/>
+<wire x1="-127" y1="25.4" x2="-149.86" y2="25.4" width="0.1524" layer="91"/>
+<label x="-147.32" y="25.4" size="1.778" layer="95"/>
+<pinref part="R21" gate="G$1" pin="1"/>
+<wire x1="-149.86" y1="25.4" x2="-160.02" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-149.86" y1="43.18" x2="-149.86" y2="25.4" width="0.1524" layer="91"/>
+<junction x="-149.86" y="25.4"/>
+</segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOR_125_CLK10"/>
+<wire x1="33.02" y1="101.6" x2="66.04" y2="101.6" width="0.1524" layer="91"/>
+<label x="35.56" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -6346,13 +6355,6 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <label x="-81.28" y="-134.62" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PWR_STP_12V" class="0">
-<segment>
-<pinref part="C69" gate="G$1" pin="2"/>
-<wire x1="-15.24" y1="-152.4" x2="12.7" y2="-152.4" width="0.1524" layer="91"/>
-<label x="-12.7" y="-152.4" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$18" class="0">
 <segment>
 <pinref part="U23" gate="G$1" pin="5VOUT"/>
@@ -6652,6 +6654,11 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <wire x1="-17.78" y1="-60.96" x2="-17.78" y2="-58.42" width="0.1524" layer="91"/>
 <junction x="-17.78" y="-58.42"/>
 <label x="-15.24" y="-58.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="C69" gate="G$1" pin="2"/>
+<wire x1="-15.24" y1="-152.4" x2="12.7" y2="-152.4" width="0.1524" layer="91"/>
+<label x="-12.7" y="-152.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$7" class="0">
