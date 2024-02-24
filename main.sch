@@ -6793,13 +6793,6 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <label x="-63.5" y="-15.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PROC_STATUS" class="0">
-<segment>
-<pinref part="U18" gate="G$1" pin="GPIOR_80"/>
-<wire x1="-66.04" y1="-17.78" x2="-33.02" y2="-17.78" width="0.1524" layer="91"/>
-<label x="-63.5" y="-17.78" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="LED_PROC_SCANNING" class="0">
 <segment>
 <pinref part="D10" gate="G$1" pin="K"/>
@@ -7162,6 +7155,11 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <wire x1="-154.94" y1="-172.72" x2="-154.94" y2="-182.88" width="0.1524" layer="91"/>
 <wire x1="-154.94" y1="-182.88" x2="-88.9" y2="-182.88" width="0.1524" layer="91"/>
 <label x="-114.3" y="-182.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U18" gate="G$1" pin="GPIOR_80"/>
+<wire x1="-66.04" y1="-17.78" x2="-33.02" y2="-17.78" width="0.1524" layer="91"/>
+<label x="-63.5" y="-17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
