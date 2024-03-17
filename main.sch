@@ -5460,63 +5460,63 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIOB_P_00_PLLIN1"/>
 <wire x1="71.12" y1="20.32" x2="33.02" y2="20.32" width="0.1524" layer="91"/>
-<label x="35.56" y="20.32" size="1.778" layer="95"/>
+<label x="38.1" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AR_XSHUTDOWN" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIOB_N_00"/>
 <wire x1="71.12" y1="17.78" x2="33.02" y2="17.78" width="0.1524" layer="91"/>
-<label x="35.56" y="17.78" size="1.778" layer="95"/>
+<label x="38.1" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AR_GPIO1" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIOB_P_01_EXTFB"/>
 <wire x1="71.12" y1="15.24" x2="33.02" y2="15.24" width="0.1524" layer="91"/>
-<label x="35.56" y="15.24" size="1.778" layer="95"/>
+<label x="38.1" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AR_CLK" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIOB_N_01"/>
 <wire x1="71.12" y1="12.7" x2="33.02" y2="12.7" width="0.1524" layer="91"/>
-<label x="35.56" y="12.7" size="1.778" layer="95"/>
+<label x="38.1" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AR_GPIO3" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIOB_P_02_CDI4"/>
 <wire x1="71.12" y1="10.16" x2="33.02" y2="10.16" width="0.1524" layer="91"/>
-<label x="35.56" y="10.16" size="1.778" layer="95"/>
+<label x="38.1" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AR_GPIO0" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIOB_N_02_CDI5"/>
 <wire x1="71.12" y1="7.62" x2="33.02" y2="7.62" width="0.1524" layer="91"/>
-<label x="35.56" y="7.62" size="1.778" layer="95"/>
+<label x="38.1" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AR_I2C_SCL" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIOB_P_07_CLK15_P"/>
 <wire x1="71.12" y1="-10.16" x2="33.02" y2="-10.16" width="0.1524" layer="91"/>
-<label x="35.56" y="-10.16" size="1.778" layer="95"/>
+<label x="38.1" y="-10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AR_GPIO2" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIOB_N_07_CLK15_N"/>
 <wire x1="71.12" y1="-12.7" x2="33.02" y2="-12.7" width="0.1524" layer="91"/>
-<label x="35.56" y="-12.7" size="1.778" layer="95"/>
+<label x="38.1" y="-12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AR_I2C_SDA" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIOB_P_08_CLK14_P"/>
 <wire x1="33.02" y1="-15.24" x2="71.12" y2="-15.24" width="0.1524" layer="91"/>
-<label x="35.56" y="-15.24" size="1.778" layer="95"/>
+<label x="38.1" y="-15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RAM_NRESET" class="0">
