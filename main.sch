@@ -4262,38 +4262,38 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <attribute name="NAME" x="58.42" y="-157.48" size="1.27" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="63.5" y="-157.48" size="1.27" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="D6" gate="G$1" x="121.92" y="-68.58" smashed="yes" rot="R270">
-<attribute name="NAME" x="119.38" y="-68.58" size="1.27" layer="95" rot="R270" align="center"/>
-<attribute name="VALUE" x="116.84" y="-68.58" size="1.27" layer="96" rot="R270" align="center"/>
+<instance part="D6" gate="G$1" x="134.62" y="-127" smashed="yes" rot="R270">
+<attribute name="NAME" x="132.08" y="-127" size="1.27" layer="95" rot="R270" align="center"/>
+<attribute name="VALUE" x="129.54" y="-127" size="1.27" layer="96" rot="R270" align="center"/>
 </instance>
-<instance part="D7" gate="G$1" x="132.08" y="-68.58" smashed="yes" rot="R270">
-<attribute name="NAME" x="129.54" y="-68.58" size="1.27" layer="95" rot="R270" align="center"/>
-<attribute name="VALUE" x="127" y="-68.58" size="1.27" layer="96" rot="R270" align="center"/>
+<instance part="D7" gate="G$1" x="144.78" y="-127" smashed="yes" rot="R270">
+<attribute name="NAME" x="142.24" y="-127" size="1.27" layer="95" rot="R270" align="center"/>
+<attribute name="VALUE" x="139.7" y="-127" size="1.27" layer="96" rot="R270" align="center"/>
 </instance>
-<instance part="D5" gate="G$1" x="142.24" y="-68.58" smashed="yes" rot="R270">
-<attribute name="NAME" x="139.7" y="-68.58" size="1.27" layer="95" rot="R270" align="center"/>
-<attribute name="VALUE" x="137.16" y="-68.58" size="1.27" layer="96" rot="R270" align="center"/>
+<instance part="D5" gate="G$1" x="-142.24" y="86.36" smashed="yes" rot="R270">
+<attribute name="NAME" x="-144.78" y="86.36" size="1.27" layer="95" rot="R270" align="center"/>
+<attribute name="VALUE" x="-147.32" y="86.36" size="1.27" layer="96" rot="R270" align="center"/>
 </instance>
-<instance part="R59" gate="G$1" x="121.92" y="-55.88" smashed="yes" rot="R90">
-<attribute name="NAME" x="119.38" y="-55.88" size="1.27" layer="95" rot="R90" align="center"/>
-<attribute name="VALUE" x="124.46" y="-55.88" size="1.27" layer="96" rot="R90" align="center"/>
+<instance part="R59" gate="G$1" x="134.62" y="-114.3" smashed="yes" rot="R90">
+<attribute name="NAME" x="132.08" y="-114.3" size="1.27" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="137.16" y="-114.3" size="1.27" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="R79" gate="G$1" x="132.08" y="-55.88" smashed="yes" rot="R90">
-<attribute name="NAME" x="129.54" y="-55.88" size="1.27" layer="95" rot="R90" align="center"/>
-<attribute name="VALUE" x="134.62" y="-55.88" size="1.27" layer="96" rot="R90" align="center"/>
+<instance part="R79" gate="G$1" x="144.78" y="-114.3" smashed="yes" rot="R90">
+<attribute name="NAME" x="142.24" y="-114.3" size="1.27" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="147.32" y="-114.3" size="1.27" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="R80" gate="G$1" x="142.24" y="-55.88" smashed="yes" rot="R90">
-<attribute name="NAME" x="139.7" y="-55.88" size="1.27" layer="95" rot="R90" align="center"/>
-<attribute name="VALUE" x="144.78" y="-55.88" size="1.27" layer="96" rot="R90" align="center"/>
+<instance part="R80" gate="G$1" x="-142.24" y="99.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="-144.78" y="99.06" size="1.27" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="-139.7" y="99.06" size="1.27" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="GND170" gate="G$1" x="121.92" y="-78.74" smashed="yes">
-<attribute name="VALUE" x="121.92" y="-81.28" size="1.778" layer="96" align="center"/>
+<instance part="GND170" gate="G$1" x="134.62" y="-137.16" smashed="yes">
+<attribute name="VALUE" x="134.62" y="-139.7" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="GND171" gate="G$1" x="132.08" y="-78.74" smashed="yes">
-<attribute name="VALUE" x="132.08" y="-81.28" size="1.778" layer="96" align="center"/>
+<instance part="GND171" gate="G$1" x="144.78" y="-137.16" smashed="yes">
+<attribute name="VALUE" x="144.78" y="-139.7" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="GND172" gate="G$1" x="142.24" y="-78.74" smashed="yes">
-<attribute name="VALUE" x="142.24" y="-81.28" size="1.778" layer="96" align="center"/>
+<instance part="GND172" gate="G$1" x="-142.24" y="76.2" smashed="yes">
+<attribute name="VALUE" x="-142.24" y="73.66" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="R29" gate="G$1" x="162.56" y="-165.1" smashed="yes">
 <attribute name="NAME" x="162.56" y="-162.56" size="1.27" layer="95" align="center"/>
@@ -4500,17 +4500,17 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <segment>
 <pinref part="D6" gate="G$1" pin="K"/>
 <pinref part="GND170" gate="G$1" pin="GND"/>
-<wire x1="121.92" y1="-76.2" x2="121.92" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="-134.62" x2="134.62" y2="-132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="D7" gate="G$1" pin="K"/>
 <pinref part="GND171" gate="G$1" pin="GND"/>
-<wire x1="132.08" y1="-76.2" x2="132.08" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="-134.62" x2="144.78" y2="-132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="D5" gate="G$1" pin="K"/>
 <pinref part="GND172" gate="G$1" pin="GND"/>
-<wire x1="142.24" y1="-76.2" x2="142.24" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="-142.24" y1="78.74" x2="-142.24" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWR_FPGA_1V2" class="0">
@@ -5557,45 +5557,34 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <segment>
 <pinref part="D6" gate="G$1" pin="A"/>
 <pinref part="R59" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="-60.96" x2="121.92" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="-119.38" x2="134.62" y2="-121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$114" class="0">
 <segment>
 <pinref part="D7" gate="G$1" pin="A"/>
 <pinref part="R79" gate="G$1" pin="1"/>
-<wire x1="132.08" y1="-60.96" x2="132.08" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="-119.38" x2="144.78" y2="-121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$115" class="0">
 <segment>
 <pinref part="D5" gate="G$1" pin="A"/>
 <pinref part="R80" gate="G$1" pin="1"/>
-<wire x1="142.24" y1="-60.96" x2="142.24" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="-142.24" y1="93.98" x2="-142.24" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FPGA_LED_0" class="0">
 <segment>
-<label x="144.78" y="-48.26" size="1.778" layer="95"/>
-<wire x1="165.1" y1="-48.26" x2="142.24" y2="-48.26" width="0.1524" layer="91"/>
+<label x="-139.7" y="106.68" size="1.778" layer="95"/>
+<wire x1="-119.38" y1="106.68" x2="-142.24" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="R80" gate="G$1" pin="2"/>
-<wire x1="142.24" y1="-48.26" x2="142.24" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="-142.24" y1="106.68" x2="-142.24" y2="104.14" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="FPGA_LED_1" class="0">
 <segment>
-<label x="144.78" y="-45.72" size="1.778" layer="95"/>
-<wire x1="132.08" y1="-45.72" x2="165.1" y2="-45.72" width="0.1524" layer="91"/>
-<pinref part="R79" gate="G$1" pin="2"/>
-<wire x1="132.08" y1="-45.72" x2="132.08" y2="-50.8" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="FPGA_LED_2" class="0">
-<segment>
-<label x="144.78" y="-43.18" size="1.778" layer="95"/>
-<wire x1="121.92" y1="-43.18" x2="165.1" y2="-43.18" width="0.1524" layer="91"/>
-<pinref part="R59" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="-43.18" x2="121.92" y2="-50.8" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="GPIOR_119_CTRL12"/>
+<wire x1="-30.48" y1="-22.86" x2="-76.2" y2="-22.86" width="0.1524" layer="91"/>
+<label x="-73.66" y="-22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FPGA_LOGIC_NRST" class="0">
@@ -5643,6 +5632,32 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <label x="127" y="-233.68" size="1.778" layer="95"/>
 <wire x1="157.48" y1="-233.68" x2="106.68" y2="-233.68" width="0.1524" layer="91"/>
 <pinref part="U15" gate="G$1" pin="IO33"/>
+</segment>
+</net>
+<net name="ESP_LED_0" class="0">
+<segment>
+<pinref part="U15" gate="G$1" pin="IO22"/>
+<wire x1="157.48" y1="-210.82" x2="106.68" y2="-210.82" width="0.1524" layer="91"/>
+<label x="127" y="-210.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<label x="157.48" y="-104.14" size="1.778" layer="95"/>
+<wire x1="144.78" y1="-104.14" x2="177.8" y2="-104.14" width="0.1524" layer="91"/>
+<pinref part="R79" gate="G$1" pin="2"/>
+<wire x1="144.78" y1="-104.14" x2="144.78" y2="-109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ESP_LED_1" class="0">
+<segment>
+<pinref part="U15" gate="G$1" pin="IO23"/>
+<wire x1="157.48" y1="-213.36" x2="106.68" y2="-213.36" width="0.1524" layer="91"/>
+<label x="127" y="-213.36" size="1.778" layer="95"/>
+</segment>
+<segment>
+<label x="157.48" y="-101.6" size="1.778" layer="95"/>
+<wire x1="134.62" y1="-101.6" x2="177.8" y2="-101.6" width="0.1524" layer="91"/>
+<pinref part="R59" gate="G$1" pin="2"/>
+<wire x1="134.62" y1="-101.6" x2="134.62" y2="-109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
