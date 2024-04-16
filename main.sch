@@ -4007,6 +4007,11 @@ StealthChop™ for Quiet Movement - UART Interface Option.</description>
 <part name="GND112" library="NETS" deviceset="GND" device=""/>
 <part name="GND113" library="NETS" deviceset="GND" device=""/>
 <part name="R34" library="r_0402" deviceset="RC0402FR-0722RL" device="" value="22R"/>
+<part name="R35" library="r_0402" deviceset="ERJ-2RKF1002X" device="" value="10k"/>
+<part name="GND117" library="NETS" deviceset="GND" device=""/>
+<part name="R36" library="r_0402" deviceset="ERJ-2RKF1002X" device="" value="10k"/>
+<part name="GND118" library="NETS" deviceset="GND" device=""/>
+<part name="R37" library="r_0402" deviceset="ERJ-2RKF1002X" device="" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -4400,9 +4405,27 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <attribute name="NAME" x="162.56" y="-162.56" size="1.27" layer="95" align="center"/>
 <attribute name="VALUE" x="162.56" y="-167.64" size="1.27" layer="96" align="center"/>
 </instance>
-<instance part="R34" gate="G$1" x="129.54" y="-256.54" smashed="yes">
-<attribute name="NAME" x="129.54" y="-254" size="1.27" layer="95" align="center"/>
-<attribute name="VALUE" x="129.54" y="-259.08" size="1.27" layer="96" align="center"/>
+<instance part="R34" gate="G$1" x="137.16" y="-271.78" smashed="yes">
+<attribute name="NAME" x="137.16" y="-269.24" size="1.27" layer="95" align="center"/>
+<attribute name="VALUE" x="137.16" y="-274.32" size="1.27" layer="96" align="center"/>
+</instance>
+<instance part="R35" gate="G$1" x="109.22" y="-246.38" smashed="yes" rot="R90">
+<attribute name="NAME" x="106.68" y="-246.38" size="1.27" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="111.76" y="-246.38" size="1.27" layer="96" rot="R90" align="center"/>
+</instance>
+<instance part="GND117" gate="G$1" x="109.22" y="-256.54" smashed="yes">
+<attribute name="VALUE" x="109.22" y="-259.08" size="1.778" layer="96" align="center"/>
+</instance>
+<instance part="R36" gate="G$1" x="116.84" y="-246.38" smashed="yes" rot="R90">
+<attribute name="NAME" x="114.3" y="-246.38" size="1.27" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="119.38" y="-246.38" size="1.27" layer="96" rot="R90" align="center"/>
+</instance>
+<instance part="GND118" gate="G$1" x="116.84" y="-256.54" smashed="yes">
+<attribute name="VALUE" x="116.84" y="-259.08" size="1.778" layer="96" align="center"/>
+</instance>
+<instance part="R37" gate="G$1" x="124.46" y="-157.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="121.92" y="-157.48" size="1.27" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="127" y="-157.48" size="1.27" layer="96" rot="R90" align="center"/>
 </instance>
 </instances>
 <busses>
@@ -4616,6 +4639,16 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <pinref part="D5" gate="G$1" pin="K"/>
 <pinref part="GND172" gate="G$1" pin="GND"/>
 <wire x1="-142.24" y1="78.74" x2="-142.24" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R35" gate="G$1" pin="1"/>
+<pinref part="GND117" gate="G$1" pin="GND"/>
+<wire x1="109.22" y1="-254" x2="109.22" y2="-251.46" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R36" gate="G$1" pin="1"/>
+<pinref part="GND118" gate="G$1" pin="GND"/>
+<wire x1="116.84" y1="-254" x2="116.84" y2="-251.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWR_FPGA_1V2" class="0">
@@ -4840,6 +4873,10 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <wire x1="109.22" y1="-149.86" x2="116.84" y2="-149.86" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="-149.86" x2="116.84" y2="-152.4" width="0.1524" layer="91"/>
 <junction x="109.22" y="-149.86"/>
+<pinref part="R37" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="-152.4" x2="124.46" y2="-149.86" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="-149.86" x2="116.84" y2="-149.86" width="0.1524" layer="91"/>
+<junction x="116.84" y="-149.86"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -5026,9 +5063,13 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <label x="-73.66" y="96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="106.68" y1="-185.42" x2="157.48" y2="-185.42" width="0.1524" layer="91"/>
-<label x="121.92" y="-185.42" size="1.778" layer="95"/>
+<wire x1="106.68" y1="-185.42" x2="116.84" y2="-185.42" width="0.1524" layer="91"/>
+<label x="129.54" y="-185.42" size="1.778" layer="95"/>
 <pinref part="U15" gate="G$1" pin="IO12"/>
+<pinref part="R36" gate="G$1" pin="2"/>
+<wire x1="116.84" y1="-185.42" x2="157.48" y2="-185.42" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="-241.3" x2="116.84" y2="-185.42" width="0.1524" layer="91"/>
+<junction x="116.84" y="-185.42"/>
 </segment>
 </net>
 <net name="FLS_SPI_CLK" class="0">
@@ -5039,7 +5080,7 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 </segment>
 <segment>
 <wire x1="106.68" y1="-190.5" x2="157.48" y2="-190.5" width="0.1524" layer="91"/>
-<label x="121.92" y="-190.5" size="1.778" layer="95"/>
+<label x="129.54" y="-190.5" size="1.778" layer="95"/>
 <pinref part="U15" gate="G$1" pin="IO14"/>
 </segment>
 </net>
@@ -5051,7 +5092,7 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 </segment>
 <segment>
 <wire x1="106.68" y1="-220.98" x2="157.48" y2="-220.98" width="0.1524" layer="91"/>
-<label x="121.92" y="-220.98" size="1.778" layer="95"/>
+<label x="129.54" y="-220.98" size="1.778" layer="95"/>
 <pinref part="U15" gate="G$1" pin="IO26"/>
 </segment>
 </net>
@@ -5063,7 +5104,7 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 </segment>
 <segment>
 <wire x1="106.68" y1="-223.52" x2="157.48" y2="-223.52" width="0.1524" layer="91"/>
-<label x="121.92" y="-223.52" size="1.778" layer="95"/>
+<label x="129.54" y="-223.52" size="1.778" layer="95"/>
 <pinref part="U15" gate="G$1" pin="IO27"/>
 </segment>
 </net>
@@ -5081,7 +5122,7 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 </segment>
 <segment>
 <wire x1="106.68" y1="-236.22" x2="157.48" y2="-236.22" width="0.1524" layer="91"/>
-<label x="121.92" y="-236.22" size="1.778" layer="95"/>
+<label x="129.54" y="-236.22" size="1.778" layer="95"/>
 <pinref part="U15" gate="G$1" pin="IO34"/>
 </segment>
 </net>
@@ -5104,7 +5145,7 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 </segment>
 <segment>
 <wire x1="106.68" y1="-218.44" x2="157.48" y2="-218.44" width="0.1524" layer="91"/>
-<label x="121.92" y="-218.44" size="1.778" layer="95"/>
+<label x="129.54" y="-218.44" size="1.778" layer="95"/>
 <pinref part="U15" gate="G$1" pin="IO25"/>
 </segment>
 </net>
@@ -5559,12 +5600,12 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <segment>
 <pinref part="U15" gate="G$1" pin="IO18"/>
 <wire x1="157.48" y1="-200.66" x2="106.68" y2="-200.66" width="0.1524" layer="91"/>
-<label x="121.92" y="-200.66" size="1.778" layer="95"/>
+<label x="129.54" y="-200.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED_PWM_CONT" class="0">
 <segment>
-<label x="121.92" y="-195.58" size="1.778" layer="95"/>
+<label x="129.54" y="-195.58" size="1.778" layer="95"/>
 <wire x1="157.48" y1="-195.58" x2="106.68" y2="-195.58" width="0.1524" layer="91"/>
 <pinref part="U15" gate="G$1" pin="IO16"/>
 </segment>
@@ -5573,14 +5614,14 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <segment>
 <pinref part="U15" gate="G$1" pin="IO19"/>
 <wire x1="157.48" y1="-203.2" x2="106.68" y2="-203.2" width="0.1524" layer="91"/>
-<label x="121.92" y="-203.2" size="1.778" layer="95"/>
+<label x="129.54" y="-203.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MTR_NEN" class="0">
 <segment>
 <pinref part="U15" gate="G$1" pin="IO21"/>
 <wire x1="157.48" y1="-208.28" x2="106.68" y2="-208.28" width="0.1524" layer="91"/>
-<label x="121.92" y="-208.28" size="1.778" layer="95"/>
+<label x="129.54" y="-208.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ESP_EN" class="0">
@@ -5621,7 +5662,7 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <pinref part="R89" gate="G$1" pin="1"/>
 <wire x1="109.22" y1="-165.1" x2="109.22" y2="-162.56" width="0.1524" layer="91"/>
 <junction x="109.22" y="-165.1"/>
-<label x="121.92" y="-165.1" size="1.778" layer="95"/>
+<label x="129.54" y="-165.1" size="1.778" layer="95"/>
 <wire x1="109.22" y1="-165.1" x2="157.48" y2="-165.1" width="0.1524" layer="91"/>
 <pinref part="R29" gate="G$1" pin="1"/>
 </segment>
@@ -5629,13 +5670,13 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <net name="MTR_UART_BIDIR" class="0">
 <segment>
 <pinref part="R34" gate="G$1" pin="1"/>
-<wire x1="124.46" y1="-256.54" x2="99.06" y2="-256.54" width="0.1524" layer="91"/>
-<label x="101.6" y="-256.54" size="1.778" layer="95"/>
+<wire x1="132.08" y1="-271.78" x2="106.68" y2="-271.78" width="0.1524" layer="91"/>
+<label x="109.22" y="-271.78" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U15" gate="G$1" pin="IO17"/>
 <wire x1="157.48" y1="-198.12" x2="106.68" y2="-198.12" width="0.1524" layer="91"/>
-<label x="121.92" y="-198.12" size="1.778" layer="95"/>
+<label x="129.54" y="-198.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$113" class="0">
@@ -5687,7 +5728,7 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <net name="SIG_PWR_BUS_UNREG" class="0">
 <segment>
 <wire x1="106.68" y1="-187.96" x2="157.48" y2="-187.96" width="0.1524" layer="91"/>
-<label x="121.92" y="-187.96" size="1.778" layer="95"/>
+<label x="129.54" y="-187.96" size="1.778" layer="95"/>
 <pinref part="U15" gate="G$1" pin="IO13"/>
 </segment>
 </net>
@@ -5708,13 +5749,13 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <net name="ESP_I2C_SDA" class="0">
 <segment>
 <wire x1="106.68" y1="-231.14" x2="157.48" y2="-231.14" width="0.1524" layer="91"/>
-<label x="121.92" y="-231.14" size="1.778" layer="95"/>
+<label x="129.54" y="-231.14" size="1.778" layer="95"/>
 <pinref part="U15" gate="G$1" pin="IO32"/>
 </segment>
 </net>
 <net name="ESP_I2C_SCL" class="0">
 <segment>
-<label x="121.92" y="-233.68" size="1.778" layer="95"/>
+<label x="129.54" y="-233.68" size="1.778" layer="95"/>
 <wire x1="157.48" y1="-233.68" x2="106.68" y2="-233.68" width="0.1524" layer="91"/>
 <pinref part="U15" gate="G$1" pin="IO33"/>
 </segment>
@@ -5723,7 +5764,7 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <segment>
 <pinref part="U15" gate="G$1" pin="IO22"/>
 <wire x1="157.48" y1="-210.82" x2="106.68" y2="-210.82" width="0.1524" layer="91"/>
-<label x="121.92" y="-210.82" size="1.778" layer="95"/>
+<label x="129.54" y="-210.82" size="1.778" layer="95"/>
 </segment>
 <segment>
 <label x="157.48" y="-104.14" size="1.778" layer="95"/>
@@ -5736,7 +5777,7 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <segment>
 <pinref part="U15" gate="G$1" pin="IO23"/>
 <wire x1="157.48" y1="-213.36" x2="106.68" y2="-213.36" width="0.1524" layer="91"/>
-<label x="121.92" y="-213.36" size="1.778" layer="95"/>
+<label x="129.54" y="-213.36" size="1.778" layer="95"/>
 </segment>
 <segment>
 <label x="157.48" y="-101.6" size="1.778" layer="95"/>
@@ -5748,13 +5789,13 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <net name="MTR_UART_TX" class="0">
 <segment>
 <pinref part="R34" gate="G$1" pin="2"/>
-<wire x1="134.62" y1="-256.54" x2="160.02" y2="-256.54" width="0.1524" layer="91"/>
-<label x="137.16" y="-256.54" size="1.778" layer="95"/>
+<wire x1="142.24" y1="-271.78" x2="167.64" y2="-271.78" width="0.1524" layer="91"/>
+<label x="144.78" y="-271.78" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U15" gate="G$1" pin="IO5"/>
 <wire x1="106.68" y1="-177.8" x2="116.84" y2="-177.8" width="0.1524" layer="91"/>
-<label x="121.92" y="-177.8" size="1.778" layer="95"/>
+<label x="129.54" y="-177.8" size="1.778" layer="95"/>
 <pinref part="R129" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="-162.56" x2="116.84" y2="-177.8" width="0.1524" layer="91"/>
 <junction x="116.84" y="-177.8"/>
@@ -5765,14 +5806,26 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <segment>
 <pinref part="U15" gate="G$1" pin="IO4"/>
 <wire x1="106.68" y1="-175.26" x2="157.48" y2="-175.26" width="0.1524" layer="91"/>
-<label x="121.92" y="-175.26" size="1.778" layer="95"/>
+<label x="129.54" y="-175.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MTR_DIR" class="0">
 <segment>
 <pinref part="U15" gate="G$1" pin="IO2"/>
-<wire x1="106.68" y1="-170.18" x2="157.48" y2="-170.18" width="0.1524" layer="91"/>
-<label x="121.92" y="-170.18" size="1.778" layer="95"/>
+<wire x1="106.68" y1="-170.18" x2="109.22" y2="-170.18" width="0.1524" layer="91"/>
+<label x="129.54" y="-170.18" size="1.778" layer="95"/>
+<pinref part="R35" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="-170.18" x2="157.48" y2="-170.18" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="-241.3" x2="109.22" y2="-170.18" width="0.1524" layer="91"/>
+<junction x="109.22" y="-170.18"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="R37" gate="G$1" pin="1"/>
+<pinref part="U15" gate="G$1" pin="IO15"/>
+<wire x1="124.46" y1="-162.56" x2="124.46" y2="-193.04" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="-193.04" x2="106.68" y2="-193.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
