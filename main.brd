@@ -169,7 +169,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.YnVzaW5lc3M6bXl1Y2wxNDk2" projecturn="a.YnVzaW5lc3M6bXl1Y2wxNDk2IzIwMjIwMzI1NTEwNjk2MjUx" f3durn="urn:adsk.wipprod:dm.lineage:P9SLlJ01T8W2nK3aE3uNkQ" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="25ed6ecb-80e3-43c8-9461-b6749bd26778" lastsyncedrevisionid="25ed6ecb-80e3-43c8-9461-b6749bd26778" lastboardhashguid="7b90c8b4-4445-55c7-81d4-34ab936b99ad" lastpushedtime="2024-04-16T06:40:12Z" linktopcb3d="true"/>
+<fusionsync huburn="a.YnVzaW5lc3M6bXl1Y2wxNDk2" projecturn="a.YnVzaW5lc3M6bXl1Y2wxNDk2IzIwMjIwMzI1NTEwNjk2MjUx" f3durn="urn:adsk.wipprod:dm.lineage:P9SLlJ01T8W2nK3aE3uNkQ" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="4cd0036a-3a08-4305-ab9c-b92c2c0d5d9a" lastsyncedrevisionid="4cd0036a-3a08-4305-ab9c-b92c2c0d5d9a" lastboardhashguid="4ccff098-27b9-a0d6-1168-0eebcf36430b" lastpushedtime="2024-04-16T19:31:25Z" linktopcb3d="true"/>
 <plain>
 <wire x1="-65" y1="14" x2="-65" y2="-14" width="0" layer="20" locked="yes"/>
 <wire x1="-65" y1="-14" x2="-62" y2="-17" width="0" layer="20" curve="90" locked="yes"/>
@@ -523,6 +523,11 @@
 <wire x1="4.5" y1="4.5" x2="-4.5" y2="4.5" width="0.125" layer="21"/>
 <wire x1="-4.5" y1="4.5" x2="-4.5" y2="-4.5" width="0.125" layer="21"/>
 <text x="-4.5" y="4.625" size="0.5" layer="25">&gt;NAME</text>
+<polygon width="0.125" layer="21">
+<vertex x="-4.5" y="4.5"/>
+<vertex x="-3.625" y="4.5"/>
+<vertex x="-4.5" y="3.625"/>
+</polygon>
 </package>
 <package name="SO8">
 <text x="-3.75" y="2.75" size="1" layer="25">&gt;NAME</text>
@@ -1406,25 +1411,25 @@ Smallest PCBWAY can go</description>
 <element name="MECH4" library="MISC" package="MOUNTHOLE_6X3" value="6mm x 3mm" x="-10" y="14" locked="yes" smashed="yes"/>
 <element name="Q1" library="TRANSISTORs" package="TO252" value="FDD5614P" x="46.875" y="4.75" smashed="yes" rot="R180">
 <attribute name="FARNELL" value="9846131" x="46.875" y="4.75" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="50.325" y="2.075" size="0.5" layer="25" rot="R180"/>
+<attribute name="NAME" x="43.425" y="11.425" size="0.5" layer="25"/>
 <attribute name="PRICE_PER" value="0.353" x="46.875" y="4.75" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R1" library="r_0402" package="0402" value="10k" x="50.125" y="14.375" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="311-10.0KLRCT-ND" x="50.125" y="14.375" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="HEIGHT" value="0.4" x="50.125" y="14.375" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="51.125" y="14" size="0.5" layer="25"/>
+<attribute name="NAME" x="49.125" y="14.75" size="0.5" layer="25" rot="R180"/>
 <attribute name="PRICE_PER" value="0.08" x="50.125" y="14.375" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="D1" library="DIODES" package="DO214AC" value="B360A-13-F" x="53.75" y="1" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="B360A-FDICT-ND" x="53.75" y="1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="HEIGHT" value="2" x="53.75" y="1" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="57" y="2.5" size="0.5" layer="25" rot="R270"/>
+<attribute name="NAME" x="56.875" y="-0.625" size="0.5" layer="25" rot="R180"/>
 <attribute name="PRICE_PER" value="0.31" x="53.75" y="1" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="D2" library="DIODES" package="DO214AC" value="B360A-13-F" x="53.75" y="4" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="B360A-FDICT-ND" x="53.75" y="4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="HEIGHT" value="2" x="53.75" y="4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="57" y="5.5" size="0.5" layer="25" rot="R270"/>
+<attribute name="NAME" x="56.125" y="5.625" size="0.5" layer="25"/>
 <attribute name="PRICE_PER" value="0.31" x="53.75" y="4" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C2" library="CAPACITORS" package="10MM_RADIAL_5MM_PITCH" value="470uF 25V" x="52" y="12" smashed="yes" rot="MR90">
@@ -1435,14 +1440,14 @@ Smallest PCBWAY can go</description>
 <element name="D3" library="DIODES" package="DO214AC" value="18V BI TVS" x="60" y="1" smashed="yes" rot="R180">
 <attribute name="HEIGHT" value="2.4" x="60" y="1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="LCSC" value="C7466245" x="60" y="1" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="56.75" y="-0.5" size="0.5" layer="25" rot="R90"/>
+<attribute name="NAME" x="63.25" y="2.5" size="0.5" layer="25" rot="R270"/>
 <attribute name="PRICE_PER" value="0.03" x="60" y="1" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C7" library="c_0402" package="0402" value="100pF 25V" x="50.125" y="13.375" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="478-12608-1-ND" x="50.125" y="13.375" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="HEIGHT" value="-" x="50.125" y="13.375" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="AVX Corporation" x="50.125" y="13.375" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="51.125" y="13" size="0.5" layer="25"/>
+<attribute name="NAME" x="49.125" y="13.75" size="0.5" layer="25" rot="R180"/>
 <attribute name="PRICE_PER" value="0.09000" x="50.125" y="13.375" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="STOCK" value="32216" x="50.125" y="13.375" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TEMP_CO" value="C0G, NP0" x="50.125" y="13.375" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1458,7 +1463,7 @@ Smallest PCBWAY can go</description>
 <element name="R5" library="r_0402" package="0402" value="10k" x="50.125" y="15.375" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="311-10.0KLRCT-ND" x="50.125" y="15.375" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="HEIGHT" value="0.4" x="50.125" y="15.375" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="51.125" y="15" size="0.5" layer="25"/>
+<attribute name="NAME" x="49.125" y="15.75" size="0.5" layer="25" rot="R180"/>
 <attribute name="PRICE_PER" value="0.08" x="50.125" y="15.375" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="U2" library="ICs" package="SOT23-6" value="USBLC6-2SC6" x="-42.5" y="-14" smashed="yes" rot="R90">
@@ -1476,7 +1481,7 @@ Smallest PCBWAY can go</description>
 <element name="U7" library="ICs" package="SOT23-6" value="TPS563201" x="38.375" y="0" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="296-47238-1-ND" x="38.375" y="0" size="0.5" layer="27" rot="R180" display="off"/>
 <attribute name="HEIGHT" value="1" x="38.375" y="0" size="0.5" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="39.125" y="2.25" size="0.5" layer="25"/>
+<attribute name="NAME" x="40" y="1.625" size="0.5" layer="25"/>
 <attribute name="PRICE_PER" value="0.39" x="38.375" y="0" size="0.5" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C42" library="CAPACITORS" package="0805" value="10uF 50V" x="41.5" y="0" smashed="yes" rot="R180">
@@ -1499,7 +1504,7 @@ Smallest PCBWAY can go</description>
 <element name="L2" library="INDUCTORS" package="SRN5040" value="2.2uH 3.5A" x="38.375" y="-5.125" smashed="yes">
 <attribute name="DIGIKEY" value="SRN5040-2R2YCT-ND" x="38.375" y="-5.125" size="0.5" layer="27" display="off"/>
 <attribute name="HEIGHT" value="4" x="38.375" y="-5.125" size="0.5" layer="27" display="off"/>
-<attribute name="NAME" x="35.75" y="-7.875" size="0.5" layer="25" rot="R90"/>
+<attribute name="NAME" x="41" y="-2.375" size="0.5" layer="25" rot="R270"/>
 <attribute name="PRICE_PER" value="0.46" x="38.375" y="-5.125" size="0.5" layer="27" display="off"/>
 </element>
 <element name="C44" library="CAPACITORS" package="0805" value="10uF 50V" x="36.625" y="-9.75" smashed="yes" rot="R90">
@@ -1523,20 +1528,20 @@ Smallest PCBWAY can go</description>
 <element name="R18" library="r_0402" package="0402" value="34k" x="42.375" y="-8.75" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="YAG3126CT-ND" x="42.375" y="-8.75" size="0.5" layer="27" rot="R180" display="off"/>
 <attribute name="HEIGHT" value="0.4" x="42.375" y="-8.75" size="0.5" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="43.375" y="-9.125" size="0.5" layer="25"/>
+<attribute name="NAME" x="43.25" y="-9.25" size="0.5" layer="25" rot="R180"/>
 <attribute name="PRICE_PER" value="0.08" x="42.375" y="-8.75" size="0.5" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R19" library="r_0402" package="0402" value="10k" x="42.375" y="-7" smashed="yes">
 <attribute name="DIGIKEY" value="311-10.0KLRCT-ND" x="42.375" y="-7" size="0.5" layer="27" display="off"/>
 <attribute name="HEIGHT" value="0.4" x="42.375" y="-7" size="0.5" layer="27" display="off"/>
-<attribute name="NAME" x="43.375" y="-7.375" size="0.5" layer="25"/>
+<attribute name="NAME" x="41.5" y="-6" size="0.5" layer="25"/>
 <attribute name="PRICE_PER" value="0.08" x="42.375" y="-7" size="0.5" layer="27" display="off"/>
 </element>
 <element name="C47" library="c_0603" package="0603" value="0.1uF 50V" x="41.25" y="-1.5" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="478-5778-1-ND" x="41.25" y="-1.5" size="0.5" layer="27" rot="R180" display="off"/>
 <attribute name="HEIGHT" value="-" x="41.25" y="-1.5" size="0.5" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="AVX Corporation" x="41.25" y="-1.5" size="0.5" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="42.625" y="-2.25" size="0.5" layer="25" rot="R180"/>
+<attribute name="NAME" x="42.75" y="-1" size="0.5" layer="25" rot="R270"/>
 <attribute name="PRICE_PER" value="0.07000" x="41.25" y="-1.5" size="0.5" layer="27" rot="R180" display="off"/>
 <attribute name="STOCK" value="883194" x="41.25" y="-1.5" size="0.5" layer="27" rot="R180" display="off"/>
 <attribute name="TEMP_CO" value="X7R" x="41.25" y="-1.5" size="0.5" layer="27" rot="R180" display="off"/>
@@ -1547,7 +1552,7 @@ Smallest PCBWAY can go</description>
 <attribute name="DIGIKEY" value="399-8939-1-ND" x="42.375" y="-7.875" size="0.5" layer="27" rot="R180" display="off"/>
 <attribute name="HEIGHT" value="-" x="42.375" y="-7.875" size="0.5" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="KEMET" x="42.375" y="-7.875" size="0.5" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="43.375" y="-8.25" size="0.5" layer="25"/>
+<attribute name="NAME" x="41.5" y="-6.5" size="0.5" layer="25"/>
 <attribute name="PRICE_PER" value="0.28000" x="42.375" y="-7.875" size="0.5" layer="27" rot="R180" display="off"/>
 <attribute name="STOCK" value="23427" x="42.375" y="-7.875" size="0.5" layer="27" rot="R180" display="off"/>
 <attribute name="TEMP_CO" value="C0G, NP0" x="42.375" y="-7.875" size="0.5" layer="27" rot="R180" display="off"/>
@@ -2293,7 +2298,7 @@ Smallest PCBWAY can go</description>
 <attribute name="DIGIKEY" value="478-4596-1-ND" x="-15.25" y="8.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="HEIGHT" value="-" x="-15.25" y="8.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="AVX Corporation" x="-15.25" y="8.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-14.875" y="7.5" size="0.5" layer="25" rot="R180"/>
+<attribute name="NAME" x="-15.75" y="7.625" size="0.5" layer="25" rot="R90"/>
 <attribute name="PRICE_PER" value="0.09000" x="-15.25" y="8.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="STOCK" value="1340787" x="-15.25" y="8.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TEMP_CO" value="X5R" x="-15.25" y="8.5" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2309,7 +2314,7 @@ Smallest PCBWAY can go</description>
 <element name="R20" library="r_0402" package="0402" value="16k" x="-13.75" y="8" smashed="yes">
 <attribute name="DIGIKEY" value="13-RC0402FR-1316KLCT-ND" x="-13.75" y="8" size="1.778" layer="27" display="off"/>
 <attribute name="HEIGHT" value="0.4" x="-13.75" y="8" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-14.75" y="8.375" size="0.5" layer="25" rot="R180"/>
+<attribute name="NAME" x="-12.875" y="7.5" size="0.5" layer="25" rot="R180"/>
 <attribute name="PRICE_PER" value="0.08" x="-13.75" y="8" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U11" library="ICs" package="DFN2020-6" value="AP7335" x="-11.5" y="2.75" smashed="yes" rot="MR0">
@@ -2363,7 +2368,7 @@ Smallest PCBWAY can go</description>
 <attribute name="DIGIKEY" value="490-13238-1-ND" x="-26.625" y="6.75" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="HEIGHT" value="-" x="-26.625" y="6.75" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Murata Electronics" x="-26.625" y="6.75" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="-25.75" y="6.25" size="0.5" layer="25" rot="R180"/>
+<attribute name="NAME" x="-27.625" y="7.125" size="0.5" layer="25" rot="R180"/>
 <attribute name="PRICE_PER" value="0.12" x="-26.625" y="6.75" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="STOCK" value="6944494" x="-26.625" y="6.75" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TEMP_CO" value="X5R" x="-26.625" y="6.75" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2374,7 +2379,7 @@ Smallest PCBWAY can go</description>
 <attribute name="DIGIKEY" value="478-11505-1-ND" x="-26.625" y="7.75" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="HEIGHT" value="-" x="-26.625" y="7.75" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="AVX Corporation" x="-26.625" y="7.75" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="-25.75" y="7.25" size="0.5" layer="25" rot="R180"/>
+<attribute name="NAME" x="-27.625" y="8.125" size="0.5" layer="25" rot="R180"/>
 <attribute name="PRICE_PER" value="0.49000" x="-26.625" y="7.75" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="STOCK" value="17994" x="-26.625" y="7.75" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TEMP_CO" value="X5R" x="-26.625" y="7.75" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2385,7 +2390,7 @@ Smallest PCBWAY can go</description>
 <attribute name="DIGIKEY" value="478-11505-1-ND" x="-27.625" y="3.875" size="1.778" layer="27" display="off"/>
 <attribute name="HEIGHT" value="-" x="-27.625" y="3.875" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="AVX Corporation" x="-27.625" y="3.875" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-28.5" y="4.375" size="0.5" layer="25"/>
+<attribute name="NAME" x="-26.625" y="3.5" size="0.5" layer="25"/>
 <attribute name="PRICE_PER" value="0.49000" x="-27.625" y="3.875" size="1.778" layer="27" display="off"/>
 <attribute name="STOCK" value="17994" x="-27.625" y="3.875" size="1.778" layer="27" display="off"/>
 <attribute name="TEMP_CO" value="X5R" x="-27.625" y="3.875" size="1.778" layer="27" display="off"/>
@@ -2406,14 +2411,14 @@ Smallest PCBWAY can go</description>
 <element name="R26" library="r_0402" package="0402" value="10k" x="-26.375" y="2.75" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="311-10.0KLRCT-ND" x="-26.375" y="2.75" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="HEIGHT" value="0.4" x="-26.375" y="2.75" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="-24.875" y="2" size="0.5" layer="25" rot="R180"/>
+<attribute name="NAME" x="-25.5" y="2.25" size="0.5" layer="25" rot="R180"/>
 <attribute name="PRICE_PER" value="0.08" x="-26.375" y="2.75" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C71" library="c_0402" package="0402" value="10uF 6.3V" x="-16.625" y="0.75" smashed="yes" rot="MR0">
 <attribute name="DIGIKEY" value="490-13238-1-ND" x="-16.625" y="0.75" size="0.5" layer="28" rot="MR0" display="off"/>
 <attribute name="HEIGHT" value="-" x="-16.625" y="0.75" size="0.5" layer="28" rot="MR0" display="off"/>
 <attribute name="MANUFACTURER" value="Murata Electronics" x="-16.625" y="0.75" size="0.5" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="-15.75" y="1.25" size="0.5" layer="26" rot="MR0"/>
+<attribute name="NAME" x="-15.625" y="1.125" size="0.5" layer="26" rot="MR180"/>
 <attribute name="PRICE_PER" value="0.12" x="-16.625" y="0.75" size="0.5" layer="28" rot="MR0" display="off"/>
 <attribute name="STOCK" value="6944494" x="-16.625" y="0.75" size="0.5" layer="28" rot="MR0" display="off"/>
 <attribute name="TEMP_CO" value="X5R" x="-16.625" y="0.75" size="0.5" layer="28" rot="MR0" display="off"/>
@@ -2523,7 +2528,7 @@ Smallest PCBWAY can go</description>
 <attribute name="DIGIKEY" value="478-11505-1-ND" x="-16.625" y="-0.125" size="0.5" layer="28" rot="MR0" display="off"/>
 <attribute name="HEIGHT" value="-" x="-16.625" y="-0.125" size="0.5" layer="28" rot="MR0" display="off"/>
 <attribute name="MANUFACTURER" value="AVX Corporation" x="-16.625" y="-0.125" size="0.5" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="-15.75" y="0.375" size="0.5" layer="26" rot="MR0"/>
+<attribute name="NAME" x="-15.625" y="0.25" size="0.5" layer="26" rot="MR180"/>
 <attribute name="PRICE_PER" value="0.49000" x="-16.625" y="-0.125" size="0.5" layer="28" rot="MR0" display="off"/>
 <attribute name="STOCK" value="17994" x="-16.625" y="-0.125" size="0.5" layer="28" rot="MR0" display="off"/>
 <attribute name="TEMP_CO" value="X5R" x="-16.625" y="-0.125" size="0.5" layer="28" rot="MR0" display="off"/>
@@ -2540,7 +2545,7 @@ Smallest PCBWAY can go</description>
 <attribute name="DIGIKEY" value="478-11505-1-ND" x="-19" y="4.25" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="HEIGHT" value="-" x="-19" y="4.25" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MANUFACTURER" value="AVX Corporation" x="-19" y="4.25" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="-18.125" y="4.75" size="0.5" layer="26" rot="MR0"/>
+<attribute name="NAME" x="-19.875" y="3.75" size="0.5" layer="26" rot="MR180"/>
 <attribute name="PRICE_PER" value="0.49000" x="-19" y="4.25" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="STOCK" value="17994" x="-19" y="4.25" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="TEMP_CO" value="X5R" x="-19" y="4.25" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -2561,7 +2566,7 @@ Smallest PCBWAY can go</description>
 <element name="D6" library="OPTO" package="0603_POLAR" value="RED LED" x="13.5" y="9.125" smashed="yes" rot="MR180">
 <attribute name="DIGIKEY" value="732-4978-1-ND" x="10" y="-18.875" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="HEIGHT" value="1" x="10" y="-18.875" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="12" y="8.375" size="0.5" layer="26" rot="MR180"/>
+<attribute name="NAME" x="14.875" y="9.875" size="0.5" layer="26" rot="MR0"/>
 <attribute name="PRICE_PER" value="0.11" x="10" y="-18.875" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="D7" library="OPTO" package="0603_POLAR" value="RED LED" x="13.5" y="7.625" smashed="yes" rot="MR180">
@@ -2579,7 +2584,7 @@ Smallest PCBWAY can go</description>
 <element name="R59" library="r_0402" package="0402" value="2.2k" x="18.125" y="8.5" smashed="yes" rot="MR180">
 <attribute name="DIGIKEY" value="311-2.20KLRCT-ND" x="2.625" y="-9.75" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="HEIGHT" value="0.4" x="2.625" y="-9.75" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="17.25" y="8" size="0.5" layer="26" rot="MR180"/>
+<attribute name="NAME" x="19" y="9" size="0.5" layer="26" rot="MR0"/>
 <attribute name="PRICE_PER" value="0.08" x="2.625" y="-9.75" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="R79" library="r_0402" package="0402" value="2.2k" x="18.125" y="7.625" smashed="yes" rot="MR180">
@@ -2603,14 +2608,14 @@ Smallest PCBWAY can go</description>
 <element name="R87" library="r_0402" package="0402" value="10k" x="12.875" y="6.75" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="P10.0KLCT-ND" x="56.125" y="-4.75" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="HEIGHT" value="0.4" x="56.125" y="-4.75" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="13.75" y="6.25" size="0.5" layer="25" rot="R180"/>
+<attribute name="NAME" x="13.75" y="5.25" size="0.5" layer="25" rot="R180"/>
 <attribute name="PRICE_PER" value="0.07" x="56.125" y="-4.75" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C162" library="c_0402" package="0402" value="0.1uF 10V" x="12.875" y="5.75" smashed="yes">
 <attribute name="DIGIKEY" value="399-C0402C104K8RAC7411CT-ND" x="-17.875" y="15" size="1.778" layer="27" display="off"/>
 <attribute name="HEIGHT" value="-" x="-17.875" y="15" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="KEMET" x="-17.875" y="15" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="12" y="6.25" size="0.5" layer="25"/>
+<attribute name="NAME" x="13.75" y="4.625" size="0.5" layer="25" rot="R180"/>
 <attribute name="PRICE_PER" value="0.07000" x="-17.875" y="15" size="1.778" layer="27" display="off"/>
 <attribute name="STOCK" value="25280" x="-17.875" y="15" size="1.778" layer="27" display="off"/>
 <attribute name="TEMP_CO" value="X7R" x="-17.875" y="15" size="1.778" layer="27" display="off"/>
@@ -2643,7 +2648,7 @@ Smallest PCBWAY can go</description>
 <element name="R129" library="r_0402" package="0402" value="10k" x="35" y="-3" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="P10.0KLCT-ND" x="37.5" y="24.75" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="HEIGHT" value="0.4" x="37.5" y="24.75" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="35.5" y="-2.125" size="0.5" layer="25" rot="R270"/>
+<attribute name="NAME" x="35.375" y="-2" size="0.5" layer="25" rot="R90"/>
 <attribute name="PRICE_PER" value="0.07" x="37.5" y="24.75" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R90" library="r_0402" package="0402" value="10k" x="34.875" y="4.125" smashed="yes">
@@ -2661,7 +2666,7 @@ Smallest PCBWAY can go</description>
 <element name="Q2" library="TRANSISTORs" package="SOT23-3" value="MMBT3904" x="21" y="7" smashed="yes" rot="MR270">
 <attribute name="DIGIKEY" value="MMBT3904-FDICT-ND" x="21" y="7" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="HEIGHT" value="0.8" x="21" y="7" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="19.125" y="8.75" size="0.5" layer="26" rot="MR270"/>
+<attribute name="NAME" x="19.25" y="5.125" size="0.5" layer="26" rot="MR180"/>
 <attribute name="PRICE_PER" value="0.1" x="21" y="7" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="Q3" library="TRANSISTORs" package="SOT23-3" value="MMBT3904" x="26.75" y="7" smashed="yes" rot="MR90">
@@ -2673,31 +2678,31 @@ Smallest PCBWAY can go</description>
 <element name="R11" library="r_0402" package="0402" value="10k" x="23.875" y="8" smashed="yes" rot="MR180">
 <attribute name="DIGIKEY" value="311-10.0KLRCT-ND" x="19.75" y="13.25" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="HEIGHT" value="0.4" x="23.875" y="8" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="22.375" y="7.25" size="0.5" layer="26" rot="MR180"/>
+<attribute name="NAME" x="24.75" y="8.5" size="0.5" layer="26" rot="MR0"/>
 <attribute name="PRICE_PER" value="0.08" x="19.75" y="13.25" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="R12" library="r_0402" package="0402" value="10k" x="23.875" y="6" smashed="yes" rot="MR0">
 <attribute name="DIGIKEY" value="311-10.0KLRCT-ND" x="23.875" y="2.75" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="HEIGHT" value="0.4" x="23.875" y="6" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="25.375" y="6.75" size="0.5" layer="26" rot="MR0"/>
+<attribute name="NAME" x="23" y="5.5" size="0.5" layer="26" rot="MR180"/>
 <attribute name="PRICE_PER" value="0.08" x="23.875" y="2.75" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="R29" library="r_0402" package="0402" value="22R" x="34.375" y="-8.75" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="311-22.0LRCT-ND" x="34.375" y="-8.75" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="HEIGHT" value="0.4" x="34.375" y="-8.75" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="34.875" y="-7.875" size="0.5" layer="25" rot="R270"/>
+<attribute name="NAME" x="34" y="-9.75" size="0.5" layer="25" rot="R270"/>
 <attribute name="PRICE_PER" value="0.08" x="34.375" y="-8.75" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="D8" library="DIODES" package="DO214AC" value="B360A-13-F" x="40.5" y="5.5" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="B360A-FDICT-ND" x="40.5" y="5.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="HEIGHT" value="2" x="40.5" y="5.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="41.5" y="10.75" size="0.5" layer="25" rot="R180"/>
+<attribute name="NAME" x="42.25" y="3.125" size="0.5" layer="25" rot="R270"/>
 <attribute name="PRICE_PER" value="0.31" x="40.5" y="5.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="D10" library="DIODES" package="DO214AC" value="B360A-13-F" x="37.5" y="5.5" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="B360A-FDICT-ND" x="37.5" y="5.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="HEIGHT" value="2" x="37.5" y="5.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="39.25" y="8.625" size="0.5" layer="25" rot="R270"/>
+<attribute name="NAME" x="36" y="8.75" size="0.5" layer="25"/>
 <attribute name="PRICE_PER" value="0.31" x="37.5" y="5.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="FB1" library="INDUCTORS" package="1206" value="150R 100MHz" x="-62.5" y="-7.375" smashed="yes" rot="MR90">
@@ -2720,20 +2725,20 @@ Smallest PCBWAY can go</description>
 <element name="R31" library="r_0402" package="0402" value="10k" x="18.75" y="0.625" smashed="yes" rot="MR180">
 <attribute name="DIGIKEY" value="311-10.0KLRCT-ND" x="18.75" y="0.625" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="HEIGHT" value="0.4" x="18.75" y="0.625" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="17.875" y="0.125" size="0.5" layer="26" rot="MR180"/>
+<attribute name="NAME" x="19.75" y="1" size="0.5" layer="26" rot="MR180"/>
 <attribute name="PRICE_PER" value="0.08" x="18.75" y="0.625" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="R32" library="r_0402" package="0402" value="100k" x="18.75" y="1.5" smashed="yes" rot="MR0">
 <attribute name="DIGIKEY" value="311-100KLRCT-ND" x="18.75" y="1.5" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="HEIGHT" value="0.4" x="18.75" y="1.5" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="19.625" y="2" size="0.5" layer="26" rot="MR0"/>
+<attribute name="NAME" x="19.75" y="1.875" size="0.5" layer="26" rot="MR180"/>
 <attribute name="PRICE_PER" value="0.08" x="18.75" y="1.5" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="C85" library="c_0402" package="0402" value="0.1uF 16V" x="18.75" y="-0.25" smashed="yes" rot="MR0">
 <attribute name="DIGIKEY" value="478-11505-1-ND" x="18.75" y="-0.25" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="HEIGHT" value="-" x="18.75" y="-0.25" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MANUFACTURER" value="AVX Corporation" x="18.75" y="-0.25" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="19.625" y="0.25" size="0.5" layer="26" rot="MR0"/>
+<attribute name="NAME" x="19.75" y="0.125" size="0.5" layer="26" rot="MR180"/>
 <attribute name="PRICE_PER" value="0.49000" x="18.75" y="-0.25" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="STOCK" value="17994" x="18.75" y="-0.25" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="TEMP_CO" value="X5R" x="18.75" y="-0.25" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -2741,7 +2746,7 @@ Smallest PCBWAY can go</description>
 <attribute name="VOLTAGE" value="16V" x="18.75" y="-0.25" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="D12" library="DIODES" package="SOT23-3-BAT54S" value="BAT54S-7-F" x="18.25" y="-2.625" smashed="yes" rot="MR0">
-<attribute name="NAME" x="20" y="-0.75" size="0.5" layer="26" rot="MR0"/>
+<attribute name="NAME" x="16.375" y="-0.875" size="0.5" layer="26" rot="MR270"/>
 </element>
 <element name="R33" library="r_0402" package="0402" value="22R" x="25.875" y="-9.875" smashed="yes" rot="MR180">
 <attribute name="DIGIKEY" value="311-22.0LRCT-ND" x="25.875" y="-14.375" size="1.778" layer="28" rot="MR180" display="off"/>
@@ -2783,14 +2788,14 @@ Smallest PCBWAY can go</description>
 <element name="R13" library="r_0402" package="0402" value="10k" x="55.375" y="-5.5" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="311-10.0KLRCT-ND" x="55.375" y="-5.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="HEIGHT" value="0.4" x="55.375" y="-5.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="56.25" y="-6" size="0.508" layer="25" rot="R180"/>
+<attribute name="NAME" x="56.25" y="-6" size="0.5" layer="25" rot="R180"/>
 <attribute name="PRICE_PER" value="0.08" x="55.375" y="-5.5" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C68" library="c_0402" package="0402" value="0.1uF 16V" x="45.875" y="-3.5" smashed="yes">
 <attribute name="DIGIKEY" value="478-11505-1-ND" x="45.875" y="-3.5" size="1.778" layer="27" display="off"/>
 <attribute name="HEIGHT" value="-" x="45.875" y="-3.5" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="AVX Corporation" x="45.875" y="-3.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="45" y="-3" size="0.508" layer="25"/>
+<attribute name="NAME" x="45" y="-3" size="0.5" layer="25"/>
 <attribute name="PRICE_PER" value="0.49000" x="45.875" y="-3.5" size="1.778" layer="27" display="off"/>
 <attribute name="STOCK" value="17994" x="45.875" y="-3.5" size="1.778" layer="27" display="off"/>
 <attribute name="TEMP_CO" value="X5R" x="45.875" y="-3.5" size="1.778" layer="27" display="off"/>
@@ -2801,7 +2806,7 @@ Smallest PCBWAY can go</description>
 <attribute name="DIGIKEY" value="478-5778-1-ND" x="54.625" y="-7.625" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="HEIGHT" value="-" x="54.625" y="-7.625" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="AVX Corporation" x="54.625" y="-7.625" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="56.125" y="-8.375" size="1.016" layer="25" rot="R180"/>
+<attribute name="NAME" x="56.125" y="-8.375" size="0.5" layer="25" rot="R180"/>
 <attribute name="PRICE_PER" value="0.07000" x="54.625" y="-7.625" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="STOCK" value="883194" x="54.625" y="-7.625" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TEMP_CO" value="X7R" x="54.625" y="-7.625" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2812,7 +2817,7 @@ Smallest PCBWAY can go</description>
 <attribute name="DIGIKEY" value="478-5778-1-ND" x="45.375" y="-7.625" size="1.778" layer="27" display="off"/>
 <attribute name="HEIGHT" value="-" x="45.375" y="-7.625" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="AVX Corporation" x="45.375" y="-7.625" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="43.875" y="-6.875" size="1.016" layer="25"/>
+<attribute name="NAME" x="43.875" y="-6.875" size="0.5" layer="25"/>
 <attribute name="PRICE_PER" value="0.07000" x="45.375" y="-7.625" size="1.778" layer="27" display="off"/>
 <attribute name="STOCK" value="883194" x="45.375" y="-7.625" size="1.778" layer="27" display="off"/>
 <attribute name="TEMP_CO" value="X7R" x="45.375" y="-7.625" size="1.778" layer="27" display="off"/>
@@ -2822,20 +2827,20 @@ Smallest PCBWAY can go</description>
 <element name="R14" library="r_0402" package="0402" value="10k" x="48.375" y="-1.875" smashed="yes" rot="MR90">
 <attribute name="DIGIKEY" value="311-10.0KLRCT-ND" x="48.375" y="-1.875" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="HEIGHT" value="0.4" x="48.375" y="-1.875" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="48.875" y="-2.75" size="0.508" layer="26" rot="MR90"/>
+<attribute name="NAME" x="48.875" y="-2.75" size="0.5" layer="26" rot="MR90"/>
 <attribute name="PRICE_PER" value="0.08" x="48.375" y="-1.875" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="R16" library="r_0402" package="0402" value="10k" x="47.375" y="-1.875" smashed="yes" rot="MR90">
 <attribute name="DIGIKEY" value="311-10.0KLRCT-ND" x="47.375" y="-1.875" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="HEIGHT" value="0.4" x="47.375" y="-1.875" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="46.875" y="-1" size="0.508" layer="26" rot="MR270"/>
+<attribute name="NAME" x="46.875" y="-1" size="0.5" layer="26" rot="MR270"/>
 <attribute name="PRICE_PER" value="0.08" x="47.375" y="-1.875" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="C81" library="c_0402" package="0402" value="2.2uF 6.3V" x="52" y="-1.375" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="399-11617-1-ND" x="52" y="-1.375" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="HEIGHT" value="-" x="52" y="-1.375" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="KEMET" x="52" y="-1.375" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="52.875" y="-1.875" size="0.508" layer="25" rot="R180"/>
+<attribute name="NAME" x="53" y="-1.625" size="0.5" layer="25"/>
 <attribute name="PRICE_PER" value="0.15000" x="52" y="-1.375" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="STOCK" value="32394" x="52" y="-1.375" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TEMP_CO" value="X5R" x="52" y="-1.375" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2846,7 +2851,7 @@ Smallest PCBWAY can go</description>
 <attribute name="DIGIKEY" value="478-11505-1-ND" x="54.375" y="-3.25" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="HEIGHT" value="-" x="54.375" y="-3.25" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="AVX Corporation" x="54.375" y="-3.25" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="55.25" y="-3.75" size="0.508" layer="25" rot="R180"/>
+<attribute name="NAME" x="53.5" y="-2.75" size="0.5" layer="25"/>
 <attribute name="PRICE_PER" value="0.49000" x="54.375" y="-3.25" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="STOCK" value="17994" x="54.375" y="-3.25" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TEMP_CO" value="X5R" x="54.375" y="-3.25" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2857,7 +2862,7 @@ Smallest PCBWAY can go</description>
 <attribute name="DIGIKEY" value="399-14435-1-ND" x="53.875" y="-4.75" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="HEIGHT" value="-" x="53.875" y="-4.75" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="KEMET" x="53.875" y="-4.75" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="53.375" y="-5.625" size="0.508" layer="25" rot="R90"/>
+<attribute name="NAME" x="54.375" y="-3.875" size="0.5" layer="25" rot="R270"/>
 <attribute name="PRICE_PER" value="0.42000" x="53.875" y="-4.75" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="STOCK" value="18653" x="53.875" y="-4.75" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TEMP_CO" value="X7R" x="53.875" y="-4.75" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2867,37 +2872,37 @@ Smallest PCBWAY can go</description>
 <element name="R28" library="RESISTORS" package="0603" value="0.33R" x="47" y="-11" smashed="yes" rot="R270">
 <attribute name="FARNELL" value="2328096" x="47" y="-11" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="HEIGHT" value="0.5" x="47" y="-11" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="47.75" y="-9.5" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="47.75" y="-9.625" size="0.5" layer="25" rot="R270"/>
 <attribute name="PRICE_PER" value="0.141" x="47" y="-11" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R30" library="RESISTORS" package="0603" value="0.33R" x="53" y="-11" smashed="yes" rot="R270">
 <attribute name="FARNELL" value="2328096" x="53" y="-11" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="HEIGHT" value="0.5" x="53" y="-11" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="53.75" y="-9.5" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="53.75" y="-9.625" size="0.5" layer="25" rot="R270"/>
 <attribute name="PRICE_PER" value="0.141" x="53" y="-11" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R34" library="r_0402" package="0402" value="22R" x="34.125" y="-3" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="311-22.0LRCT-ND" x="34.125" y="-3" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="HEIGHT" value="0.4" x="34.125" y="-3" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="33.625" y="-3.875" size="0.508" layer="25" rot="R90"/>
+<attribute name="NAME" x="34.5" y="-2" size="0.5" layer="25" rot="R90"/>
 <attribute name="PRICE_PER" value="0.08" x="34.125" y="-3" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R35" library="r_0402" package="0402" value="10k" x="29.75" y="-10.375" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="P10.0KLCT-ND" x="29.75" y="-10.375" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="HEIGHT" value="0.4" x="29.75" y="-10.375" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="29.25" y="-11.25" size="0.508" layer="25" rot="R90"/>
+<attribute name="NAME" x="30.25" y="-9.625" size="0.5" layer="25" rot="R270"/>
 <attribute name="PRICE_PER" value="0.07" x="29.75" y="-10.375" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R36" library="r_0402" package="0402" value="10k" x="-24.375" y="9.875" smashed="yes">
 <attribute name="DIGIKEY" value="P10.0KLCT-ND" x="-24.375" y="9.875" size="1.778" layer="27" display="off"/>
 <attribute name="HEIGHT" value="0.4" x="-24.375" y="9.875" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-25.25" y="10.375" size="0.508" layer="25"/>
+<attribute name="NAME" x="-25.25" y="10.375" size="0.5" layer="25"/>
 <attribute name="PRICE_PER" value="0.07" x="-24.375" y="9.875" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R37" library="r_0402" package="0402" value="10k" x="28.5" y="-10.375" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="P10.0KLCT-ND" x="28.5" y="-10.375" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="HEIGHT" value="0.4" x="28.5" y="-10.375" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="29" y="-9.5" size="0.508" layer="25" rot="R270"/>
+<attribute name="NAME" x="28" y="-11.25" size="0.5" layer="25" rot="R90"/>
 <attribute name="PRICE_PER" value="0.07" x="28.5" y="-10.375" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 </elements>
@@ -6214,7 +6219,6 @@ Smallest PCBWAY can go</description>
 <contactref element="R34" pad="2"/>
 <contactref element="U15" pad="29"/>
 <contactref element="R129" pad="1"/>
-<wire x1="32.625" y1="-2.18" x2="32.5" y2="-2.18" width="0.1016" layer="1"/>
 <wire x1="32.5" y1="-2.18" x2="32.82" y2="-2.5" width="0.1016" layer="1"/>
 <wire x1="32.82" y1="-2.5" x2="34.125" y2="-2.5" width="0.1016" layer="1"/>
 <wire x1="34.125" y1="-2.5" x2="35" y2="-2.5" width="0.1016" layer="1"/>

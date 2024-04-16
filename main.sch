@@ -506,6 +506,11 @@
 <wire x1="4.5" y1="4.5" x2="-4.5" y2="4.5" width="0.125" layer="21"/>
 <wire x1="-4.5" y1="4.5" x2="-4.5" y2="-4.5" width="0.125" layer="21"/>
 <text x="-4.5" y="4.625" size="0.5" layer="25">&gt;NAME</text>
+<polygon width="0.125" layer="21">
+<vertex x="-4.5" y="4.5"/>
+<vertex x="-3.625" y="4.5"/>
+<vertex x="-4.5" y="3.625"/>
+</polygon>
 </package>
 <package name="SO8">
 <text x="-3.75" y="2.75" size="1" layer="25">&gt;NAME</text>
