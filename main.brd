@@ -181,7 +181,7 @@
 <wire x1="-62" y1="17" x2="-65" y2="14" width="0" layer="20" curve="90" locked="yes"/>
 <text x="-30" y="8" size="2" layer="16" rot="MR0">Soke Eng. - knokke
 3.0.0
-2024.04.01</text>
+2024.04.16</text>
 <text x="-30" y="8" size="2" layer="30" rot="MR0">Soke Eng. - knokke
 3.0.0
 2024.04.01</text>
@@ -5267,12 +5267,6 @@ Smallest PCBWAY can go</description>
 <wire x1="-29.3536" y1="0.60353125" x2="-29.3536" y2="0.6036" width="0.1016" layer="16"/>
 <wire x1="-28" y1="-0.75" x2="-29.1464" y2="0.3964" width="0.1016" layer="16"/>
 <wire x1="-29.3536" y1="0.6036" x2="-33.75" y2="5" width="0.1016" layer="16"/>
-</signal>
-<signal name="FT_CONT_TX">
-<contactref element="U1" pad="L9"/>
-</signal>
-<signal name="FT_CONT_RX">
-<contactref element="U1" pad="L10"/>
 </signal>
 <signal name="LED_FT_CONT_NRXLED">
 <contactref element="U6" pad="54"/>

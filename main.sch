@@ -3911,7 +3911,7 @@
 <sheet>
 <description>COVER</description>
 <plain>
-<text x="0" y="0" size="7.62" layer="97" font="vector" align="center">2024.03.19 - GSWDH LTD.
+<text x="0" y="0" size="7.62" layer="97" font="vector" align="center">2024.04.16 - GSWDH LTD.
 FILM SCANNER MAIN
 
 REVISION 3.0.0
@@ -5119,25 +5119,11 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <label x="-73.66" y="-68.58" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="FT_CONT_TX" class="0">
-<segment>
-<wire x1="-76.2" y1="-71.12" x2="-30.48" y2="-71.12" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="GPIOB_RXN04"/>
-<label x="-73.66" y="-71.12" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="FT_D7" class="0">
 <segment>
 <wire x1="-76.2" y1="-73.66" x2="-30.48" y2="-73.66" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="GPIOB_RXN05"/>
 <label x="-73.66" y="-73.66" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="FT_CONT_RX" class="0">
-<segment>
-<wire x1="-30.48" y1="-76.2" x2="-76.2" y2="-76.2" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="GPIOB_RXN06"/>
-<label x="-73.66" y="-76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FT_D4" class="0">
