@@ -4017,6 +4017,8 @@ StealthChop™ for Quiet Movement - UART Interface Option.</description>
 <part name="R36" library="r_0402" deviceset="ERJ-2RKF1002X" device="" value="10k"/>
 <part name="GND118" library="NETS" deviceset="GND" device=""/>
 <part name="R37" library="r_0402" deviceset="ERJ-2RKF1002X" device="" value="10k"/>
+<part name="R38" library="r_0402" deviceset="RC0402FR-072K2L" device="" value="2.2k"/>
+<part name="R39" library="r_0402" deviceset="RC0402FR-072K2L" device="" value="2.2k"/>
 </parts>
 <sheets>
 <sheet>
@@ -6158,6 +6160,14 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <instance part="GND116" gate="G$1" x="96.52" y="-101.6" smashed="yes">
 <attribute name="VALUE" x="96.52" y="-104.14" size="1.778" layer="96" align="center"/>
 </instance>
+<instance part="R38" gate="G$1" x="147.32" y="-104.14" smashed="yes" rot="R90">
+<attribute name="NAME" x="144.78" y="-104.14" size="1.27" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="149.86" y="-104.14" size="1.27" layer="96" rot="R90" align="center"/>
+</instance>
+<instance part="R39" gate="G$1" x="154.94" y="-104.14" smashed="yes" rot="R90">
+<attribute name="NAME" x="152.4" y="-104.14" size="1.27" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="157.48" y="-104.14" size="1.27" layer="96" rot="R90" align="center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6668,6 +6678,11 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <junction x="76.2" y="-83.82"/>
 <label x="43.18" y="-83.82" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U16" gate="G$1" pin="EN"/>
+<wire x1="40.64" y1="-127" x2="73.66" y2="-127" width="0.1524" layer="91"/>
+<label x="43.18" y="-127" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PWR_SEN_1V05D" class="0">
 <segment>
@@ -6786,6 +6801,16 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <junction x="96.52" y="-83.82"/>
 <label x="101.6" y="-83.82" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R38" gate="G$1" pin="2"/>
+<wire x1="147.32" y1="-99.06" x2="147.32" y2="-96.52" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="-96.52" x2="154.94" y2="-96.52" width="0.1524" layer="91"/>
+<pinref part="R39" gate="G$1" pin="2"/>
+<wire x1="154.94" y1="-96.52" x2="180.34" y2="-96.52" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="-99.06" x2="154.94" y2="-96.52" width="0.1524" layer="91"/>
+<junction x="154.94" y="-96.52"/>
+<label x="160.02" y="-96.52" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
@@ -6836,12 +6861,24 @@ CONFIDENTIAL. FOR THE INTENDED READER ONLY.</text>
 <label x="101.6" y="-121.92" size="1.778" layer="95"/>
 <pinref part="U16" gate="G$1" pin="B3"/>
 </segment>
+<segment>
+<pinref part="R38" gate="G$1" pin="1"/>
+<wire x1="147.32" y1="-109.22" x2="147.32" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="-114.3" x2="180.34" y2="-114.3" width="0.1524" layer="91"/>
+<label x="160.02" y="-114.3" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="ESP_I2C_SCL" class="0">
 <segment>
 <label x="101.6" y="-124.46" size="1.778" layer="95"/>
 <wire x1="132.08" y1="-124.46" x2="99.06" y2="-124.46" width="0.1524" layer="91"/>
 <pinref part="U16" gate="G$1" pin="B4"/>
+</segment>
+<segment>
+<pinref part="R39" gate="G$1" pin="1"/>
+<wire x1="154.94" y1="-109.22" x2="154.94" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="-111.76" x2="180.34" y2="-111.76" width="0.1524" layer="91"/>
+<label x="160.02" y="-111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
